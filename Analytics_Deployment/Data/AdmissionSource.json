@@ -1,0 +1,126 @@
+[
+  {
+    "Id": 19,
+    "Description": "Readmission to Same Home Health Agency                                                              ",
+    "id": "a199eb7f-b872-4ac9-94b9-1791e1629c3f"
+  },
+  {
+    "Id": 7,
+    "Description": "Emergency Room                                                                                      ",
+    "id": "ba343a35-0f5f-4a56-9a9a-f0491987e0f3"
+  },
+  {
+    "Id": 2,
+    "Description": "Clinic Referral                                                                                     ",
+    "id": "bc4f50a8-d91e-4fae-b5d6-321b0d6630d7"
+  },
+  {
+    "Id": 18,
+    "Description": "Transfer From Another Home Health Agency                                                            ",
+    "id": "d2dd6f51-7ce0-4d05-a62e-69127e6acde1"
+  },
+  {
+    "Id": 22,
+    "Description": "Transfer from hospital inpt/same fac reslt in a sep claim                                           ",
+    "id": "b917c6fe-ae49-446b-8e77-a2acd14c86fa"
+  },
+  {
+    "Id": 9,
+    "Description": "Not Available                                                                                       ",
+    "id": "62664d9b-2b81-474f-8f21-a74bf97dd0d4"
+  },
+  {
+    "Id": 10,
+    "Description": "Transfer from critial access hospital                                                               ",
+    "id": "fa8bd871-a732-4cb3-aa07-6158ea691e2c"
+  },
+  {
+    "Id": 6,
+    "Description": "Transfer from another health care facility                                                          ",
+    "id": "07c5e461-450a-4e3c-b1a3-2b7b22f17c7b"
+  },
+  {
+    "Id": 8,
+    "Description": "Court/Law Enforcement                                                                               ",
+    "id": "bfde551c-e901-4350-9dc1-91c211b4c4bd"
+  },
+  {
+    "Id": 26,
+    "Description": "Transfer from Hospice                                                                               ",
+    "id": "d9b4a700-f602-4490-8998-fa6bdaabbe4a"
+  },
+  {
+    "Id": 20,
+    "Description": "Not Mapped                                                                                          ",
+    "id": "e8ba0a83-07e6-44fa-8f48-4f3b100ba435"
+  },
+  {
+    "Id": 3,
+    "Description": "HMO Referral                                                                                        ",
+    "id": "019e0190-a883-4a82-9f43-80eadae00b0e"
+  },
+  {
+    "Id": 23,
+    "Description": "Born inside this hospital                                                                           ",
+    "id": "c9a8996c-b15d-43c1-b541-24f00d0d61aa"
+  },
+  {
+    "Id": 1,
+    "Description": "Physician Referral                                                                                  ",
+    "id": "1c86ddb5-9fa5-4415-b873-aae0536771ff"
+  },
+  {
+    "Id": 12,
+    "Description": "Premature Delivery                                                                                  ",
+    "id": "c5743482-94bd-45cf-8d22-dd2c9dfcc52d"
+  },
+  {
+    "Id": 13,
+    "Description": "Sick Baby                                                                                           ",
+    "id": "d8ff86fd-3edf-4893-89f7-05a3f2be7c8a"
+  },
+  {
+    "Id": 21,
+    "Description": "Unknown/Invalid                                                                                     ",
+    "id": "8b42f7c1-bb10-4b0e-874d-7fe56ad8ace1"
+  },
+  {
+    "Id": 5,
+    "Description": "Transfer from a Skilled Nursing Facility (SNF)                                                      ",
+    "id": "93b2d2f2-ae3e-4bd0-b79c-2fbe75cc0b1d"
+  },
+  {
+    "Id": 14,
+    "Description": "Extramural Birth                                                                                    ",
+    "id": "6d58b887-a9f4-45f0-aff2-316fab5978b7"
+  },
+  {
+    "Id": 25,
+    "Description": "Transfer from Ambulatory Surgery Center                                                             ",
+    "id": "48b69337-0f2d-4446-b5c6-1a13363705df"
+  },
+  {
+    "Id": 24,
+    "Description": "Born outside this hospital                                                                          ",
+    "id": "ef3e144f-8052-4dfa-b772-4f2e7b497ec5"
+  },
+  {
+    "Id": 17,
+    "Description": null,
+    "id": "07ad336a-fa94-4d6b-a4e1-79a58a29e32c"
+  },
+  {
+    "Id": 11,
+    "Description": "Normal Delivery                                                                                     ",
+    "id": "4de85474-a8e6-42b6-9cc5-0a98c4429656"
+  },
+  {
+    "Id": 15,
+    "Description": "Not Available                                                                                       ",
+    "id": "f163d8e3-99b2-4757-8b3a-8aa27ed4abfc"
+  },
+  {
+    "Id": 4,
+    "Description": "Transfer from a hospital                                                                            ",
+    "id": "b02ea2b8-ff3a-4798-a413-7ffd6478fcf5"
+  }]

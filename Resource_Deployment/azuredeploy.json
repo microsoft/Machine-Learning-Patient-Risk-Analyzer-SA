@@ -1,3 +1,1094 @@
 {
-  Foo : "Bar"
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    
+    "parameters": {
+        "UniquePrefixName": {
+            "type": "string",
+            "defaultValue": "hub",
+            "minLength": 3,
+            "maxLength": 10,
+            "metadata": {
+                "description": "Name prefix between 3-10 characters with only characters and numbers"
+            }
+        },
+        "office365DisplayName": {
+          "type": "string",
+          "defaultValue": "",
+          "metadata": {
+            "description": "Office 365 Email Address"
+          }
+        },
+        "AllowAllFirewallRule": {
+            "type": "string",
+            "allowedValues": [
+                "true",
+                "false"
+            ],
+            "defaultValue": "false"
+        }
+    },
+
+    "variables": {
+        "subscriptionId": "[subscription().subscriptionId]",
+        "location": "[resourceGroup().location]",
+        "rgId": "[resourceGroup().id]",
+        "rgName": "[resourceGroup().name]",
+
+        "tenantId": "[subscription().tenantId]",
+        "paramName": "[parameters('UniquePrefixName')]",
+        "storageContainer": "raw",
+        
+        
+        "uniqueName": "[uniqueString( variables('rgId') )]",
+        "synapseWorkspaceName": "[concat('synapse-ws-',variables('paramName'))]",
+        "storageName": "[replace(replace(toLower(concat( variables('paramName'), variables('uniqueName') )),'-',''),'_','')]",
+
+        "machinelearningName": "[concat('ml-', variables('paramName'))]",
+        "storageMLname": "[replace(replace(toLower(concat( variables('machinelearningName'), variables('uniqueName') )),'-',''),'_','')]",
+        "appinsightsname": "[concat(variables('machinelearningName'), 'ai')]",
+        "keyvaultname": "[concat('keyvault', variables('uniqueName'))]",
+        "k8sname": "[concat('k8s', variables('uniqueName'))]",
+
+        "cosmosDBName": "[concat('cosmosdb', variables('paramName'))]",
+        "cosmosDBDatabase": "[concat(variables('cosmosDBName'), '/patienthubdb')]", 
+        "ContainerAdmissionSource": "[concat(variables('cosmosDBName'), '/patienthubdb/AdmissionSource')]",
+        "ContainerAdmissionType": "[concat(variables('cosmosDBName'), '/patienthubdb/AdmissionType')]",
+        "ContainerAppointments": "[concat(variables('cosmosDBName'), '/patienthubdb/Appointments')]",
+        "ContainerColumnLookupValues": "[concat(variables('cosmosDBName'), '/patienthubdb/ColumnLookupValues')]",
+        "ContainerColumnNameMap": "[concat(variables('cosmosDBName'), '/patienthubdb/ColumnNameMap')]",
+        "ContainerDischargeDisposition": "[concat(variables('cosmosDBName'), '/patienthubdb/DischargeDisposition')]",
+        "ContainerExplanations": "[concat(variables('cosmosDBName'), '/patienthubdb/Explanations')]",
+        "ContainerICD9Code": "[concat(variables('cosmosDBName'), '/patienthubdb/ICD9Code')]",
+        "ContainerPatient": "[concat(variables('cosmosDBName'), '/patienthubdb/Patient')]",
+        "ContainerPatientMapping": "[concat(variables('cosmosDBName'), '/patienthubdb/PatientMapping')]",
+        "ContainerPredictions": "[concat(variables('cosmosDBName'), '/patienthubdb/Predictions')]",
+        "ContainerRecommendations": "[concat(variables('cosmosDBName'), '/patienthubdb/Recommendations')]",
+        "ContainerStatus": "[concat(variables('cosmosDBName'), '/patienthubdb/Status')]",
+
+        "LogicAppName": "[concat('logicapp', variables('uniqueName'))]",
+        "TextTranslationname": "[concat('TTS', variables('uniqueName'))]",
+        "FormRecognizername": "[concat('FR', variables('uniqueName'))]",
+        "SpeechServicename": "[concat('Speech', variables('uniqueName'))]",
+        
+        "StorageBlobDataContributor": "ba92f5b4-2d11-453d-a403-e96b0029c9fe"
+    },
+
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "name": "[variables('storageName')]",
+            "location": "[variables('location')]",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "properties": {
+                "isHnsEnabled": true,
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": true,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "enabled": true
+                        },
+                        "blob": {
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                },
+                "accessTier": "Hot"
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices",
+            "apiVersion": "2019-06-01",
+            "name": "[concat(variables('storageName'), '/default')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]"
+            ],
+            "properties": {
+                "cors": {
+                    "corsRules": []
+                },
+                "deleteRetentionPolicy": {
+                    "enabled": false
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+            "apiVersion": "2019-06-01",
+            "name": "[concat(variables('storageName'), '/default/', variables('storageContainer'))]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('storageName'), 'default')]",
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]"
+            ],
+            "properties": {
+                "publicAccess": "None"
+            }
+        },
+        {
+            "type": "Microsoft.Synapse/workspaces",
+            "apiVersion": "2020-12-01",
+            "name": "[variables('synapseWorkspaceName')]",
+            "location": "[variables('location')]",
+            "identity": {
+                "type": "SystemAssigned"
+            },
+            "properties": {
+                "defaultDataLakeStorage": {
+                    "accountUrl": "[concat('https://', variables('storageName') , '.dfs.core.windows.net')]",
+                    "filesystem": "[variables('storageContainer')]"
+                },
+                "virtualNetworkProfile": {
+                    "computeSubnetId": ""
+                },
+                "sqlAdministratorLogin": "sqladminuser"
+            },
+            "resources": [
+                {
+                    "condition": "[equals(parameters('AllowAllFirewallRule'),'true')]",
+                    "type": "firewallrules",
+                    "apiVersion": "2019-06-01-preview",
+                    "name": "allowAll",
+                    "location": "[variables('location')]",
+                    "dependsOn": [ "[variables('synapseWorkspaceName')]" ],
+                    "properties": {
+                      "startIpAddress": "0.0.0.0",
+                      "endIpAddress": "255.255.255.255"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Microsoft.Synapse/workspaces/bigDataPools",
+            "apiVersion": "2021-06-01-preview",
+            "name": "[concat(variables('synapseWorkspaceName'), '/spark1')]",
+            "location": "[variables('location')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Synapse/workspaces', variables('synapseWorkspaceName'))]"
+            ],
+            "properties": {
+                "sparkVersion": "2.4",
+                "nodeCount": 3,
+                "nodeSize": "Medium",
+                "nodeSizeFamily": "MemoryOptimized",
+                "autoScale": {
+                    "enabled": true,
+                    "minNodeCount": 3,
+                    "maxNodeCount": 15
+                },
+                "autoPause": {
+                    "enabled": true,
+                    "delayInMinutes": 15
+                },
+                "isComputeIsolationEnabled": false,
+                "sessionLevelPackagesEnabled": false,
+                "cacheSize": 0,
+                "provisioningState": "Succeeded"
+            }
+        },       
+        {
+            "type": "microsoft.insights/components",
+            "apiVersion": "2020-02-02-preview",
+            "name": "[variables('appinsightsName')]",
+            "location": "[variables('location')]",
+            "kind": "web",
+            "properties": {
+                "Application_Type": "web",
+                "IngestionMode": "ApplicationInsights",
+                "publicNetworkAccessForIngestion": "Enabled",
+                "publicNetworkAccessForQuery": "Enabled"
+            }
+        },
+        {
+            "type": "Microsoft.KeyVault/vaults",
+            "apiVersion": "2020-04-01-preview",
+            "name": "[variables('keyvaultName')]",
+            "location": "[variables('location')]",
+            "properties": {
+                "sku": {
+                    "family": "A",
+                    "name": "standard"
+                },
+                "tenantId": "[variables('tenantId')]",
+                "accessPolicies": [
+                ],
+                "enabledForDeployment": false,
+                "enableSoftDelete": false,
+                "vaultUri": "[concat('https://', variables('keyvaultName'), '.vault.azure.net/')]",
+                "provisioningState": "Succeeded"
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2021-01-01",
+            "name": "[variables('storageMLName')]",
+            "location": "[variables('location')]",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "properties": {
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": true,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "keyType": "Account",
+                            "enabled": true
+                        },
+                        "blob": {
+                            "keyType": "Account",
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                },
+                "accessTier": "Hot"
+            }
+        },
+        {
+            "type": "Microsoft.MachineLearningServices/workspaces",
+            "apiVersion": "2021-01-01",
+            "name": "[variables('machinelearningName')]",
+            "location": "[variables('location')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageMLname'))]",
+                "[resourceId('Microsoft.KeyVault/vaults', variables('keyvaultname'))]",
+                "[resourceId('microsoft.insights/components', variables('appinsightsname'))]"
+            ],
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "identity": {
+                "type": "SystemAssigned"
+            },
+            "properties": {
+                "friendlyName": "[variables('machinelearningName')]",
+                "storageAccount": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageMLname'))]",
+                "keyVault": "[resourceId('Microsoft.KeyVault/vaults', variables('keyvaultname'))]",
+                "applicationInsights": "[resourceId('microsoft.insights/components', variables('appinsightsname'))]",
+                "hbiWorkspace": false,
+                "allowPublicAccessWhenBehindVnet": false
+            }
+        },
+        {
+            "scope": "[concat('Microsoft.Storage/storageAccounts/', variables('storageName'))]",
+            "type": "Microsoft.Authorization/roleAssignments",
+            "apiVersion": "2020-04-01-preview",
+            "name": "[guid(uniqueString(variables('storageName')))]",
+            "location": "[variables('location')]",
+            "dependsOn": [
+              "[variables('synapseWorkspaceName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', variables('StorageBlobDataContributor'))]",
+              "principalId": "[reference(resourceId('Microsoft.Synapse/workspaces', variables('synapseWorkspaceName')), '2019-06-01-preview', 'Full').identity.principalId]",
+              "principalType": "ServicePrincipal"
+            }
+        },
+
+        {
+            "type": "Microsoft.DocumentDB/databaseAccounts",
+            "apiVersion": "2021-05-15",
+            "name": "[variables('cosmosDBName')]",
+            "location": "[variables('location')]",
+            "tags": {},
+            "kind": "GlobalDocumentDB",
+            "identity": {
+                "type": "None"
+            },
+            "properties": {
+                "publicNetworkAccess": "Enabled",
+                "enableAutomaticFailover": false,
+                "enableMultipleWriteLocations": false,
+                "isVirtualNetworkFilterEnabled": false,
+                "virtualNetworkRules": [],
+                "disableKeyBasedMetadataWriteAccess": false,
+                "enableFreeTier": false,
+                "enableAnalyticalStorage": false,
+                "analyticalStorageConfiguration": {},
+                "databaseAccountOfferType": "Standard",
+                "defaultIdentity": "FirstPartyIdentity",
+                "networkAclBypass": "None",
+                "consistencyPolicy": {
+                    "defaultConsistencyLevel": "Session",
+                    "maxIntervalInSeconds": 5,
+                    "maxStalenessPrefix": 100
+                },
+                "locations": [
+                    {
+                        "locationName": "[variables('location')]",
+                        "provisioningState": "Succeeded",
+                        "failoverPriority": 0,
+                        "isZoneRedundant": false
+                    }
+                ],
+                "cors": [],
+                "capabilities": [],
+                "ipRules": [],
+                "backupPolicy": {
+                    "type": "Periodic",
+                    "periodicModeProperties": {
+                        "backupIntervalInMinutes": 240,
+                        "backupRetentionIntervalInHours": 8
+                    }
+                },
+                "networkAclBypassResourceIds": []
+            }
+        },
+        {
+            "name": "[variables('cosmosDBDatabase')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+            "apiVersion": "2021-04-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "options": {
+                "autoscaleSettings": {
+                  "maxThroughput": 100000
+                }
+              },
+              "resource": {
+                "id": "patienthubdb"
+              }
+            }
+        },
+        {
+          "name": "[variables('ContainerAdmissionSource')]",
+          "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+          "apiVersion": "2021-05-15",
+          "location": "[variables('location')]",
+          "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                        "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+          "properties": {
+            "resource": {
+              "id": "AdmissionSource",
+              "indexingPolicy": {
+                "automatic": true,
+                "indexingMode": "consistent",
+                "includedPaths": [],
+                "excludedPaths": [],
+                "spatialIndexes": []
+              },
+              "partitionKey": {
+                "paths": [
+                  "/id"
+                ],
+                "kind": "Hash"
+              },
+              "uniqueKeyPolicy": {},
+              "conflictResolutionPolicy": {
+                "mode": "LastWriterWins"
+              }
+            },
+            "options": {}
+          }
+        },
+        {
+            "name": "[variables('ContainerAdmissionType')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "AdmissionType",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerAppointments')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Appointments",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/__partitionkey"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerColumnLookupValues')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "ColumnLookupValues",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerColumnNameMap')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "ColumnNameMap",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerDischargeDisposition')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "DischargeDisposition",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerExplanations')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Explanations",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerICD9Code')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "ICD9Code",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerPatient')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Patient",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/Id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerPatientMapping')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "PatientMapping",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/UserId"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerPredictions')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Predictions",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/patientId"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerRecommendations')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Recommendations",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/patientId"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "name": "[variables('ContainerStatus')]",
+            "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+            "apiVersion": "2021-05-15",
+            "location": "[variables('location')]",
+            "dependsOn": ["[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), 'patienthubdb')]",
+                          "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]"],
+            "properties": {
+              "resource": {
+                "id": "Status",
+                "indexingPolicy": {
+                  "automatic": true,
+                  "indexingMode": "consistent",
+                  "includedPaths": [],
+                  "excludedPaths": [],
+                  "spatialIndexes": []
+                },
+                "partitionKey": {
+                  "paths": [
+                    "/id"
+                  ],
+                  "kind": "Hash"
+                },
+                "uniqueKeyPolicy": {},
+                "conflictResolutionPolicy": {
+                  "mode": "LastWriterWins"
+                }
+              },
+              "options": {}
+            }
+        },
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2021-04-30",
+            "name": "[variables('TextTranslationname')]",
+            "location": "[variables('location')]",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "TextTranslation",
+            "properties": {
+                "statisticsEnabled": false,
+                "enableSoftDelete": false
+            }
+        },
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2021-04-30",
+            "name": "[variables('FormRecognizername')]",
+            "location": "[variables('location')]",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "FormRecognizer",
+            "properties": {
+                "statisticsEnabled": false,
+                "enableSoftDelete": false,
+                "customSubDomainName": "[variables('FormRecognizername')]"
+            }
+        },
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2021-04-30",
+            "name": "[variables('SpeechServicename')]",
+            "location": "[variables('location')]",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "SpeechServices",
+            "properties": {
+                "statisticsEnabled": false,
+                "enableSoftDelete": false
+            }
+        },
+        {
+            "type": "MICROSOFT.WEB/CONNECTIONS",
+            "apiVersion": "2018-07-01-preview",
+            "name": "azureblob",
+            "location": "[variables('location')]",
+            "properties": {
+                "api": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'azureblob')]"
+                },
+                "displayName": "adlspatienthub",
+                "parameterValues": {
+                "accountName": "[variables('storageName')]",
+                "accessKey": "[listKeys(variables('storageName'),'2019-06-01').keys[0].value]",
+                "authType": "basic",
+                "privacySetting": "None"
+                }
+            }
+        },
+        {
+          "type": "MICROSOFT.WEB/CONNECTIONS",
+          "apiVersion": "2018-07-01-preview",
+          "name": "office365",
+          "location": "[variables('location')]",
+          "properties": {
+              "api": {
+              "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'office365')]"
+              },
+              "displayName": "[parameters('office365DisplayName')]"
+          }
+      },
+      {
+        "type": "MICROSOFT.WEB/CONNECTIONS",
+        "apiVersion": "2018-07-01-preview",
+        "name": "formrecognizer",
+        "location": "[variables('location')]",
+        "properties": {
+            "api": {
+            "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'formrecognizer')]"
+            },
+            "displayName": "FormRecognizer",
+            "parameterValues": {
+            "api_key": "[listKeys(variables('FormRecognizername'),'2021-04-30').key1]",
+            "siteUrl": "[reference(variables('FormRecognizername'),'2021-04-30').endpoint]"
+            }
+        }
+    },
+    {
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "actions": {
+            "Analyze_Invoice": {
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['formrecognizer']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "body": "@body('Get_blob_content_(V2)')",
+                "path": "/v2.1/prebuilt/invoice/analyze",
+                "queries": {
+                  "includeTextDetails": true
+                }
+              },
+              "runAfter": {
+                "Get_blob_content_(V2)": [
+                  "Succeeded"
+                ]
+              }
+            },
+            "For_each_2": {
+              "type": "Foreach",
+              "foreach": "@triggerBody()?['attachments']",
+              "actions": {
+                "Create_blob_(V2)": {
+                  "type": "ApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['azureblob']['connectionId']"
+                      }
+                    },
+                    "method": "post",
+                    "body": "@base64ToBinary(items('For_each_2')?['contentBytes'])",
+                    "headers": {
+                      "ReadFileMetadataFromServer": true,
+                      "Content-Type": "application/pdf"
+                    },
+                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('adlspatienthub'))}/files",
+                    "queries": {
+                      "folderPath": "patientdocuments/Documents",
+                      "name": "Testppddff.pdf",
+                      "queryParametersSingleEncoded": true
+                    }
+                  },
+                  "runAfter": {},
+                  "runtimeConfiguration": {
+                    "contentTransfer": {
+                      "transferMode": "Chunked"
+                    }
+                  }
+                }
+              },
+              "runAfter": {}
+            },
+            "Get_blob_content_(V2)": {
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureblob']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('adlspatienthub'))}/files/@{encodeURIComponent(encodeURIComponent('patientdocuments/Documents/Testppddff.pdf'))}/content",
+                "queries": {
+                  "inferContentType": true
+                }
+              },
+              "runAfter": {
+                "For_each_2": [
+                  "Succeeded"
+                ]
+              }
+            }
+          },
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "When_a_new_email_arrives_(V3)": {
+              "type": "ApiConnectionNotification",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['office365']['connectionId']"
+                  }
+                },
+                "fetch": {
+                  "queries": {
+                    "folderPath": "Inbox",
+                    "importance": "Any",
+                    "fetchOnlyWithAttachment": true,
+                    "includeAttachments": true,
+                    "subjectFilter": "PatientHubTestPDF:"
+                  },
+                  "pathTemplate": {
+                    "template": "/v3/Mail/OnNewEmail"
+                  },
+                  "method": "get"
+                },
+                "subscribe": {
+                  "queries": {
+                    "folderPath": "Inbox",
+                    "importance": "Any",
+                    "fetchOnlyWithAttachment": true
+                  },
+                  "body": {
+                    "NotificationUrl": "@{listCallbackUrl()}"
+                  },
+                  "pathTemplate": {
+                    "template": "/GraphMailSubscriptionPoke/$subscriptions"
+                  },
+                  "method": "post"
+                }
+              },
+              "splitOn": "@triggerBody()?['value']"
+            }
+          },
+          "contentVersion": "1.0.0.0",
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "formrecognizer": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'formrecognizer')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', 'formrecognizer')]",
+                "connectionName": "formrecognizer"
+              },
+              "azureblob": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'azureblob')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', 'azureblob')]",
+                "connectionName": "azureblob"
+              },
+              "office365": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/', 'office365')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', 'office365')]",
+                "connectionName": "office365"
+              }
+            }
+          }
+        }
+      },
+      "name": "[variables('LogicAppName')]",
+      "type": "Microsoft.Logic/workflows",
+      "location": "[variables('location')]",
+      "apiVersion": "2016-06-01",
+      "tags": {
+        "displayName": "LogicApp"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', 'formrecognizer')]",
+        "[resourceId('Microsoft.Web/connections', 'azureblob')]",
+        "[resourceId('Microsoft.Web/connections', 'office365')]"
+      ]
+    },
+    {
+            "apiVersion": "2021-02-01",
+            "dependsOn": [],
+            "type": "Microsoft.ContainerService/managedClusters",
+            "location": "[variables('location')]",
+            "name": "[variables('k8sname')]",
+            "properties": {
+                "enableRBAC": true,
+                "dnsPrefix": "[concat(variables('k8sname'), '-dns')]",
+                "agentPoolProfiles": [
+                    {
+                        "name": "agentpool",
+                        "osDiskSizeGB": 0,
+                        "count": 3,
+                        "enableAutoScaling": true,
+                        "minCount": 1,
+                        "maxCount": 5,
+                        "vmSize": "Standard_DS2_v2",
+                        "osType": "Linux",
+                        "storageProfile": "ManagedDisks",
+                        "type": "VirtualMachineScaleSets",
+                        "mode": "System",
+                        "maxPods": 110,
+                        "availabilityZones": null
+                    }
+                ],
+                "networkProfile": {
+                    "loadBalancerSku": "standard",
+                    "networkPlugin": "kubenet"
+                },
+                "apiServerAccessProfile": {
+                    "enablePrivateCluster": false
+                },
+                "addonProfiles": {
+                    "httpApplicationRouting": {
+                        "enabled": false
+                    },
+                    "azurepolicy": {
+                        "enabled": false
+                    }
+                }
+            },
+            "tags": {},
+            "identity": {
+                "type": "SystemAssigned"
+            }
+        },
+        { 
+          "apiVersion": "2020-10-01",
+          "name": "pid-0cb569ad-9682-50e5-89da-6a667c71d3da",
+          "type": "Microsoft.Resources/deployments",
+          "properties": {
+              "mode": "Incremental",
+              "template": {
+                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "contentVersion": "1.0.0.0",
+                  "resources": []
+              }
+          }
+      }
+    ]
 }

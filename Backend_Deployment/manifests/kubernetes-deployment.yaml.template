@@ -1,0 +1,188 @@
+﻿# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: appointment
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: appointment
+ template:
+  metadata:
+   labels:
+    app: appointment
+  spec:
+    containers:
+    - name: appointment
+      image: {acrName}.azurecr.io/patienthub/appointment
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: patient
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: patient
+ template:
+  metadata:
+   labels:
+    app: patient
+  spec:
+    containers:
+    - name: patient
+      image: {acrName}.azurecr.io/patienthub/patient
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: batchinference
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: batchinference
+ template:
+  metadata:
+   labels:
+    app: batchinference
+  spec:
+    containers:
+    - name: batchinference
+      image: {acrName}.azurecr.io/patienthub/batchinference
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: realtimeinference
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: realtimeinference
+ template:
+  metadata:
+   labels:
+    app: realtimeinference
+  spec:
+    containers:
+    - name: realtimeinference
+      image: {acrName}.azurecr.io/patienthub/realtimeinference
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: changefeedwatcher
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: changefeedwatcher
+ template:
+  metadata:
+   labels:
+    app: changefeedwatcher
+  spec:
+    containers:
+    - name: changefeedwatcher
+      image: {acrName}.azurecr.io/patienthub/changefeedwatcher
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: tts
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: tts
+ template:
+  metadata:
+   labels:
+    app: tts
+  spec:
+    containers:
+    - name: tts
+      image: {acrName}.azurecr.io/patienthub/tts
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: appointment
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: appointment
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: patient
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: patient
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: batchinference
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: batchinference
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: realtimeinference
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: realtimeinference
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: tts
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: tts

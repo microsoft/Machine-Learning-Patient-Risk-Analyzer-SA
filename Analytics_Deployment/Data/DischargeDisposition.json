@@ -1,0 +1,151 @@
+[
+  {
+    "Id": 9,
+    "Description": "Admitted as an inpatient to this hospital\r\n                                                                                                                                                             ",
+    "id": "61646bca-9d38-45b1-9146-6208fa494e95"
+  },
+  {
+    "Id": 14,
+    "Description": "Hospice / medical facility\r\n                                                                                                                                                                            ",
+    "id": "d8671c8d-792c-4881-9fca-eebcb4fed81c"
+  },
+  {
+    "Id": 27,
+    "Description": "Discharged/transferred to a federal health care facility.\r\n                                                                                                                                             ",
+    "id": "ad56b759-08ba-43d9-85a7-6a231932118c"
+  },
+  {
+    "Id": 30,
+    "Description": "Discharged/transferred to another Type of Health Care Institution not Defined Elsewhere\r\n                                                                                                               ",
+    "id": "845522ce-e708-4c0e-b997-19ee8bbcda23"
+  },
+  {
+    "Id": 28,
+    "Description": "Discharged/transferred/referred to a psychiatric hospital of psychiatric distinct part unit of a hospital\r\n                                                                                             ",
+    "id": "9a77f7a3-7d29-4350-952b-22cbfe2683e2"
+  },
+  {
+    "Id": 13,
+    "Description": "Hospice / home\r\n                                                                                                                                                                                        ",
+    "id": "5ad9ceb8-fa5c-4f08-bd3e-cd61667060c6"
+  },
+  {
+    "Id": 3,
+    "Description": "Discharged/transferred to SNF\r\n                                                                                                                                                                         ",
+    "id": "b313a74a-6ee8-4986-a85f-000510af9505"
+  },
+  {
+    "Id": 4,
+    "Description": "Discharged/transferred to ICF\r\n                                                                                                                                                                         ",
+    "id": "e735788b-262c-4426-a614-f22cae5b44a4"
+  },
+  {
+    "Id": 7,
+    "Description": "Left AMA\r\n                                                                                                                                                                                              ",
+    "id": "d1130a49-3104-4df6-bfa2-9ad0e54a01b0"
+  },
+  {
+    "Id": 21,
+    "Description": "Expired, place unknown. Medicaid only, hospice.\r\n                                                                                                                                                       ",
+    "id": "0a755736-20a5-4f06-a4f5-546198e539cb"
+  },
+  {
+    "Id": 12,
+    "Description": "Still patient or expected to return for outpatient services\r\n                                                                                                                                           ",
+    "id": "475312c1-7cb8-4834-8d93-ebe5f7b3b0ff"
+  },
+  {
+    "Id": 15,
+    "Description": "Discharged/transferred within this institution to Medicare approved swing bed\r\n                                                                                                                         ",
+    "id": "71f6eba8-f406-423d-81c5-44a2659e401e"
+  },
+  {
+    "Id": 2,
+    "Description": "Discharged/transferred to another short term hospital\r\n                                                                                                                                                 ",
+    "id": "b80df594-98a6-413b-a7a3-bd68e1768a6c"
+  },
+  {
+    "Id": 16,
+    "Description": "Discharged/transferred/referred another institution for outpatient services\r\n                                                                                                                           ",
+    "id": "f147196b-6cef-4658-88de-0233fa86b186"
+  },
+  {
+    "Id": 5,
+    "Description": "Discharged/transferred to another type of inpatient care institution\r\n                                                                                                                                  ",
+    "id": "9ea03859-4876-4a4d-b069-f695b322e2aa"
+  },
+  {
+    "Id": 22,
+    "Description": "Discharged/transferred to another rehab fac including rehab units of a hospital .\r\n                                                                                                                     ",
+    "id": "5345e0e1-f819-4876-b891-53c6c7337270"
+  },
+  {
+    "Id": 17,
+    "Description": "Discharged/transferred/referred to this institution for outpatient services\r\n                                                                                                                           ",
+    "id": "b87c8a41-b76f-4ef0-add4-fe90a03f7ecd"
+  },
+  {
+    "Id": 26,
+    "Description": "Unknown/Invalid\r\n                                                                                                                                                                                       ",
+    "id": "b9c582e9-3f4d-4e00-9592-2b17f66d6753"
+  },
+  {
+    "Id": 19,
+    "Description": "Expired at home. Medicaid only, hospice.\r\n                                                                                                                                                              ",
+    "id": "604fb143-75b8-4639-ab74-02ef80ed4725"
+  },
+  {
+    "Id": 10,
+    "Description": "Neonate discharged to another hospital for neonatal aftercare\r\n                                                                                                                                         ",
+    "id": "3aa44e3e-e24c-4f07-b4f7-9be85332f9e6"
+  },
+  {
+    "Id": 25,
+    "Description": "Not Mapped\r\n                                                                                                                                                                                            ",
+    "id": "55a899d7-6faf-4a9a-8d41-3da417b2387a"
+  },
+  {
+    "Id": 20,
+    "Description": "Expired in a medical facility. Medicaid only, hospice.\r\n                                                                                                                                                ",
+    "id": "1a2b541c-3b48-422c-a1eb-04dd6354a7e8"
+  },
+  {
+    "Id": 23,
+    "Description": "Discharged/transferred to a long term care hospital.\r\n                                                                                                                                                  ",
+    "id": "85a438bf-dd06-414e-94ce-4e0449d89537"
+  },
+  {
+    "Id": 6,
+    "Description": "Discharged/transferred to home with home health service\r\n                                                                                                                                               ",
+    "id": "737910bf-05eb-48ba-8e31-a72eeff0c27c"
+  },
+  {
+    "Id": 1,
+    "Description": "Discharged to home\r\n                                                                                                                                                                                    ",
+    "id": "76e62652-374f-4f4a-8ce5-78de62ee99f8"
+  },
+  {
+    "Id": 24,
+    "Description": "Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare.\r\n                                                                                               ",
+    "id": "3c096950-1e3c-4c39-b07a-57b3b10817da"
+  },
+  {
+    "Id": 18,
+    "Description": null,
+    "id": "eba98fa5-a084-4a82-8f6a-65d519f6398f"
+  },
+  {
+    "Id": 11,
+    "Description": "Expired\r\n                                                                                                                                                                                               ",
+    "id": "134da99e-adff-4d03-b31b-66a957826284"
+  },
+  {
+    "Id": 8,
+    "Description": "Discharged/transferred to home under care of Home IV provider\r\n                                                                                                                                         ",
+    "id": "31f5a8d4-3498-4038-b76b-334eb9385959"
+  },
+  {
+    "Id": 29,
+    "Description": "Discharged/transferred to a Critical Access Hospital (CAH).\r\n                                                                                                                                           ",
+    "id": "c648f71f-fdba-451f-8cf1-0456dff6996f"
+  }]

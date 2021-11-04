@@ -1,0 +1,16 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "Values": {
+    "DBConnectionString": "{DBConnectionString}",
+    "DatabaseName": "{DatabaseName}",
+    "ContainerName": "Predictions",
+    "LeaseContainerName": "Predictions_lease",
+    "PartitionKeyName": "/id" 
+  }
+}

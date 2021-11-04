@@ -1,0 +1,274 @@
+[
+  {
+    "Id": 22,
+    "DestinationColumn": "metformin",
+    "UIColumn": "Taking Metformin",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "e1ce8245-1813-44b5-b672-2d6955579d9a"
+  },
+  {
+    "Id": 25,
+    "DestinationColumn": "pioglitazone",
+    "UIColumn": "Taking pioglitazone",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "b7597471-11a5-43b8-bd0e-254bf2ec9885"
+  },
+  {
+    "Id": 6,
+    "DestinationColumn": "discharge_disposition_id",
+    "UIColumn": "Discharge Disposition",
+    "DistinctValues": "Not Mapped,-,Trauma Center,Elective,Urgent,Emergency&#x0D;\n,Newborn,Not Available",
+    "id": "07925cf2-2e60-4fea-8321-aa271453608c"
+  },
+  {
+    "Id": 5,
+    "DestinationColumn": "change",
+    "UIColumn": "Change",
+    "DistinctValues": "No,Ch",
+    "id": "c72e63f1-914e-484d-aeb1-96b6fa0255e5"
+  },
+  {
+    "Id": 1,
+    "DestinationColumn": "A1Cresult",
+    "UIColumn": "A1C Result",
+    "DistinctValues": "None,Norm,>7,>8",
+    "id": "39ce2ddd-9302-4f03-a03d-07833a9f4270"
+  },
+  {
+    "Id": 32,
+    "DestinationColumn": "number_emergency",
+    "UIColumn": "Weight (pounds overweight)",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "bf42bf57-2cc1-413d-83a1-9341836444c0"
+  },
+  {
+    "Id": 13,
+    "DestinationColumn": "payer_code",
+    "UIColumn": "Payer Code",
+    "DistinctValues": "OT,MP,MC,SI,BC,UN,MD,WC,HM,SP,CP,OG,FR,PO,CM,DM,CH,?",
+    "id": "68693ae0-ce15-40bf-8f96-f46e87890c1a"
+  },
+  {
+    "Id": 27,
+    "DestinationColumn": "rosiglitazone",
+    "UIColumn": "Taking rosiglitazone",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "3d647730-2bed-46c6-ad08-6049bc81a9e5"
+  },
+  {
+    "Id": 14,
+    "DestinationColumn": "race",
+    "UIColumn": "Race",
+    "DistinctValues": "Hispanic,Other,Caucasian,Asian,AfricanAmerican,?",
+    "id": "a85ecfaa-f6d4-4ee5-b0e5-9833a418ba56"
+  },
+  {
+    "Id": 20,
+    "DestinationColumn": "glyburide",
+    "UIColumn": "Taking Glyburide",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "c01eb93f-7faf-4830-9afe-3cc0e1b4e83b"
+  },
+  {
+    "Id": 19,
+    "DestinationColumn": "glipizide",
+    "UIColumn": "Taking Glipizide",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "c4915618-1847-4fc1-9836-abcf38b17df1"
+  },
+  {
+    "Id": 15,
+    "DestinationColumn": "diag_2",
+    "UIColumn": "Second Diagnosis",
+    "DistinctValues": "-",
+    "id": "415ad482-2023-40f9-93cb-e238629b794c"
+  },
+  {
+    "Id": 23,
+    "DestinationColumn": "miglitol",
+    "UIColumn": "Taking Miglitol",
+    "DistinctValues": "No,Steady,Down",
+    "id": "6013fd2e-7b60-45e1-8340-b2ae32ca5eb7"
+  },
+  {
+    "Id": 28,
+    "DestinationColumn": "tolazamide",
+    "UIColumn": "Taking tolazamide",
+    "DistinctValues": "No",
+    "id": "8a5c6ef6-e87a-4d1b-90c8-8f0e7b517396"
+  },
+  {
+    "Id": 8,
+    "DestinationColumn": "gender",
+    "UIColumn": "Gender",
+    "DistinctValues": "Unknown/Invalid,Male,Female",
+    "id": "624f79af-8f36-4cf5-b94c-29a5e1d459b5"
+  },
+  {
+    "Id": 2,
+    "DestinationColumn": "admission_source_id",
+    "UIColumn": "Admission Source",
+    "DistinctValues": "Court/Law Enforcement,Physician Referral,Normal Delivery,Sick Baby,Clinic Referral,Transfer from another health care facility,Transfer from Ambulatory Surgery Center,Transfer from hospital inpt/same fac reslt in a sep claim,Extramural Birth,Not Available,Transfer from a hospital,HMO Referral,Emergency Room,Transfer from a Skilled Nursing Facility (SNF),-",
+    "id": "be9dc7ee-17c2-4672-8c2d-89b6da8e4f62"
+  },
+  {
+    "Id": 4,
+    "DestinationColumn": "age",
+    "UIColumn": "Age",
+    "DistinctValues": "[0-10),[10-20),[20-30),[30-40),[40-50),[50-60),[60-70),[70-80),[80-90),[90-100)",
+    "id": "5e04bbcf-5769-4e14-a413-d68208b46844"
+  },
+  {
+    "Id": 10,
+    "DestinationColumn": "insulin",
+    "UIColumn": "Insulin Level",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "f298853a-e1b0-4f26-bbb7-bd3aff9d3215"
+  },
+  {
+    "Id": 34,
+    "DestinationColumn": "number_diagnoses",
+    "UIColumn": "Total number of diagnoses",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "8ae40870-d29f-4d4f-a9ae-b4bcead8ce99"
+  },
+  {
+    "Id": 38,
+    "DestinationColumn": "num_procedures",
+    "UIColumn": "Total number of procedures",
+    "DistinctValues": "0,1,2,3,4,5,6",
+    "id": "41ce2f75-f660-488e-b8a6-fdf8945809b4"
+  },
+  {
+    "Id": 39,
+    "DestinationColumn": "weight",
+    "UIColumn": "Weight",
+    "DistinctValues": "[0-25),[25-50),[50-75),[75-100),[100-125),[125-150),[150-175),[175-200),?",
+    "id": "c17b1297-c675-4d8e-9656-8c5c1d3bcf73"
+  },
+  {
+    "Id": 36,
+    "DestinationColumn": "num_medications",
+    "UIColumn": "Total number of medications",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "6465c583-3acf-40d2-8f91-ed39d31445ee"
+  },
+  {
+    "Id": 11,
+    "DestinationColumn": "medical_specialty",
+    "UIColumn": "Department",
+    "DistinctValues": "Psychology,Neurology,Gynecology,Rheumatology,Nephrology,Obstetrics,Pediatrics,Pulmonology,Orthopedics,Radiology,InternalMedicine,Neurophysiology,Oncology,Surgery-Cardiovascular/Thoracic,Endocrinology-Metabolism,PhysicianNotFound,DCPTEAM,Family/GeneralPractice,InfectiousDiseases,Orthopedics-Reconstructive,Podiatry,Endocrinology,Osteopath,Emergency/Trauma,ObstetricsandGynecology,Surgery-General,Hospitalist,Gastroenterology,Urology,Hematology,SurgicalSpecialty,Surgery-Cardiovascular,?,Ophthalmology,Radiologist,Surgeon,Hematology/Oncology,Surgery-Vascular,Surgery-Thoracic,Cardiology,Psychiatry,Resident,PhysicalMedicineandRehabilitation,Surgery-Neuro,Otolaryngology",
+    "id": "684e20f6-77f3-4722-9dcf-f7b50c34b8f1"
+  },
+  {
+    "Id": 31,
+    "DestinationColumn": "diag_3",
+    "UIColumn": "Third Diagnosis",
+    "DistinctValues": "-",
+    "id": "05335134-2f95-4043-bc34-e90590243b78"
+  },
+  {
+    "Id": 17,
+    "DestinationColumn": "chlorpropamide",
+    "UIColumn": "Taking Chlorpropamide",
+    "DistinctValues": "No,Steady",
+    "id": "ed0b807f-d75b-4f9c-80a1-26966ba75c03"
+  },
+  {
+    "Id": 30,
+    "DestinationColumn": "troglitazone",
+    "UIColumn": "Taking troglitazone",
+    "DistinctValues": "No",
+    "id": "c5eecb48-0336-4c06-835e-9d62a90be69e"
+  },
+  {
+    "Id": 24,
+    "DestinationColumn": "nateglinide",
+    "UIColumn": "Taking Nateglinide",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "8dfea988-5780-451c-bb52-3c244989ac89"
+  },
+  {
+    "Id": 35,
+    "DestinationColumn": "number_inpatient",
+    "UIColumn": "Number of cigarettes (per day)",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "a85a009f-9263-4a7a-9ff3-2cc890ffc86f"
+  },
+  {
+    "Id": 26,
+    "DestinationColumn": "repaglinide",
+    "UIColumn": "Taking repaglinide",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "8c12e533-f2dc-4fdc-8229-297ac579ac08"
+  },
+  {
+    "Id": 29,
+    "DestinationColumn": "tolbutamide",
+    "UIColumn": "Taking tolbutamide",
+    "DistinctValues": "No,Steady",
+    "id": "0b0cf971-7331-47ce-a9b1-4ad9166e8922"
+  },
+  {
+    "Id": 37,
+    "DestinationColumn": "number_outpatient",
+    "UIColumn": "Total number of outpatient visits",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "89a97ad7-a609-450b-8e51-3e24e8db64bb"
+  },
+  {
+    "Id": 3,
+    "DestinationColumn": "admission_type_id",
+    "UIColumn": "Admission Type",
+    "DistinctValues": "Not Mapped,-,Trauma Center,Elective,Urgent,Emergency\n,Newborn,Not Available",
+    "id": "43a4ad46-935f-4a0f-85d3-b42eaa625de4"
+  },
+  {
+    "Id": 18,
+    "DestinationColumn": "glimepiride",
+    "UIColumn": "Taking Glimepiride",
+    "DistinctValues": "No,Steady,Up,Down",
+    "id": "994a214a-c67f-4bb1-9ee7-7ba942d92001"
+  },
+  {
+    "Id": 12,
+    "DestinationColumn": "num_lab_procedures",
+    "UIColumn": "Number of lab procedures",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "id": "d5e1c6e2-71f6-43a4-b9fe-d4a4406b9a19"
+  },
+  {
+    "Id": 33,
+    "DestinationColumn": "time_in_hospital",
+    "UIColumn": "Total number of days in hospital",
+    "DistinctValues": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,20",
+    "id": "17779cfc-71fa-4511-861f-ca68d8415ad9"
+  },
+  {
+    "Id": 9,
+    "DestinationColumn": "max_glu_serum",
+    "UIColumn": "Glucose Serum(max)",
+    "DistinctValues": "None,Norm,>200,>300",
+    "id": "1a71aaea-c60d-46ad-bf1b-58b54e0461a1"
+  },
+  {
+    "Id": 21,
+    "DestinationColumn": "diabetesMed",
+    "UIColumn": "Taking Meds for Diabetes",
+    "DistinctValues": "No,Yes",
+    "id": "5ac9e1b6-c403-45af-9ae2-5f325836adbb"
+  },
+  {
+    "Id": 16,
+    "DestinationColumn": "acarbose",
+    "UIColumn": "Taking Acarbose",
+    "DistinctValues": "No,Steady",
+    "id": "4f73bc8d-3521-4d15-ad67-2ef84c1b3f25"
+  },
+  {
+    "Id": 7,
+    "DestinationColumn": "diag_1",
+    "UIColumn": "First Diagnosis",
+    "DistinctValues": "-",
+    "id": "5231508b-9070-4520-a697-85d235dfb84a"
+  }]

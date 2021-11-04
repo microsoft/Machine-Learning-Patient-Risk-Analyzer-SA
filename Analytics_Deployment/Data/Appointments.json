@@ -1,0 +1,221 @@
+[
+  {
+    "appointment_id": "f9401bb7-c21c-4b67-a0b1-9a78eb4a70a6",
+    "patient_id": 1940,
+    "purpose": null,
+    "start_time": "2021-06-01T12:15:37.9163937-07:00",
+    "end_time": "2021-06-01T12:45:37.9163945-07:00",
+    "doctor_name": "DB Lee",
+    "id": "16b85101-b8d2-4e02-8e70-51ec092956e3",
+    "__partitionkey": "8997"
+  },
+  {
+    "appointment_id": "091199f4-60eb-4dcf-addc-7418d571e6b4",
+    "patient_id": 1940,
+    "purpose": "Follow up",
+    "start_time": "2021-06-21T12:15:31.6197738-07:00",
+    "end_time": "2021-06-11T12:45:31.6198148-07:00",
+    "doctor_name": "DB Lee",
+    "id": "01ac5b15-37b9-46cc-8396-f2033d3bd19c",
+    "__partitionkey": "4513"
+  },
+  {
+    "appointment_id": "333d9671-2e90-4c91-a4aa-848a21124047",
+    "patient_id": 1586,
+    "purpose": null,
+    "start_time": "2021-05-31T12:12:23.0570228-07:00",
+    "end_time": "2021-05-31T12:42:23.0570248-07:00",
+    "doctor_name": "DB Lee",
+    "id": "de68081a-3f9e-49a9-a07a-44d678e82b84",
+    "__partitionkey": "3053"
+  },
+  {
+    "appointment_id": "d78f6b76-d2de-41c2-9dcc-755cd86e7a73",
+    "patient_id": 1586,
+    "purpose": "Follow up",
+    "start_time": "2021-06-20T12:21:31.6992726-07:00",
+    "end_time": "2021-06-10T12:51:31.6993956-07:00",
+    "doctor_name": "DB Lee",
+    "id": "2b0f83f4-8558-4e48-bd87-bf569f5a1947",
+    "__partitionkey": "8146"
+  },
+  {
+    "appointment_id": "3f5ec03b-420a-42a3-9cd6-753a9de94359",
+    "patient_id": 1940,
+    "purpose": null,
+    "start_time": "2021-06-01T12:15:31.6198558-07:00",
+    "end_time": "2021-06-01T12:45:31.6198573-07:00",
+    "doctor_name": "DB Lee",
+    "id": "445c6aa5-75af-4312-b6ad-c2e3a66eff49",
+    "__partitionkey": "9764"
+  },
+  {
+    "appointment_id": "3ca7d66e-3e55-45f3-ba1a-c595826c2ee1",
+    "patient_id": 156424868,
+    "purpose": "I feel really sick.",
+    "start_time": "2021-06-12T12:00:00",
+    "end_time": "2021-06-12T12:30:00",
+    "doctor_name": "Hilbert",
+    "id": "99865063-e1de-4864-b166-539685badee2",
+    "__partitionkey": "7905"
+  },
+  {
+    "appointment_id": "758260e6-806e-449e-86a3-a00d50b34582",
+    "patient_id": 1940,
+    "purpose": "Follow up",
+    "start_time": "2021-06-21T12:15:43.6560706-07:00",
+    "end_time": "2021-06-11T12:45:43.6561123-07:00",
+    "doctor_name": "DB Lee",
+    "id": "b8b5974a-0914-4d63-9ef2-2f2acd818c92",
+    "__partitionkey": "4365"
+  },
+  {
+    "appointment_id": "32447228-5f7e-44e2-b003-38d093cdeddf",
+    "patient_id": 1586,
+    "purpose": "Follow up",
+    "start_time": "2021-06-20T12:19:54.4992999-07:00",
+    "end_time": "2021-06-10T12:49:54.4993589-07:00",
+    "doctor_name": "DB Lee",
+    "id": "974bdf4e-b65c-463d-ba2b-15aa7ae93145",
+    "__partitionkey": "8387"
+  },
+  {
+    "appointment_id": "d9ec1d2f-5f69-4935-8782-8df26871e44a",
+    "patient_id": 1111,
+    "purpose": "follow up",
+    "start_time": "2021-06-20T20:51:31.118Z",
+    "end_time": "2021-06-20T20:51:41.118Z",
+    "doctor_name": "Dr. Travis",
+    "id": "d7ceeffa-d992-4c7e-8878-bc83dfc6b8d4",
+    "__partitionkey": "5619"
+  },
+  {
+    "appointment_id": "938f4b3a-c354-4ff5-8625-45e9b258bdb8",
+    "patient_id": 1586,
+    "purpose": null,
+    "start_time": "2021-05-31T12:19:54.4994364-07:00",
+    "end_time": "2021-05-31T12:49:54.4994392-07:00",
+    "doctor_name": "DB Lee",
+    "id": "b2e06cb4-8a5b-4be4-b2c6-0989eb823e15",
+    "__partitionkey": "3897"
+  },
+  {
+    "appointment_id": "9e33e634-b738-441a-b1f4-c9933300775c",
+    "patient_id": 1940,
+    "purpose": "Follow up",
+    "start_time": "2021-06-21T12:15:37.9163381-07:00",
+    "end_time": "2021-06-11T12:45:37.9163674-07:00",
+    "doctor_name": "DB Lee",
+    "id": "c80a058d-eada-4b41-a61c-6c51c4804647",
+    "__partitionkey": "1463"
+  },
+  {
+    "appointment_id": "4f057a38-15d7-4873-b9b4-fbed79e00ccb",
+    "patient_id": 1549346372,
+    "purpose": "I am really really sick",
+    "start_time": "2021-09-09T15:00:00",
+    "end_time": "2021-09-09T15:00:00",
+    "doctor_name": "Dr Hilbert",
+    "id": "33092dfc-c74a-4442-a314-796816b788ad",
+    "__partitionkey": "7438"
+  },
+  {
+    "appointment_id": "95dae11b-14f4-495a-91ea-226de9200433",
+    "patient_id": 1586,
+    "purpose": null,
+    "start_time": "2021-05-31T12:21:31.6995181-07:00",
+    "end_time": "2021-05-31T12:51:31.6995214-07:00",
+    "doctor_name": "DB Lee",
+    "id": "1a2e964a-41f7-435c-bf72-0679e6c0d6d8",
+    "__partitionkey": "6757"
+  },
+  {
+    "appointment_id": "79ef1a74-99b9-4957-8c2d-a599a00e6b57",
+    "patient_id": 156424868,
+    "purpose": "LIKE SUPER SICK",
+    "start_time": "2021-06-12T14:00:00",
+    "end_time": "2021-06-12T14:30:00",
+    "doctor_name": "Hilbert",
+    "id": "f18cb276-d82f-4833-ad3f-d9e7124dd746",
+    "__partitionkey": "6001"
+  },
+  {
+    "appointment_id": "98817910-a6ca-4df2-aa02-6eccc480a24c",
+    "patient_id": 1586,
+    "purpose": "Follow up",
+    "start_time": "2021-06-20T12:12:23.0569021-07:00",
+    "end_time": "2021-06-10T12:42:23.0569639-07:00",
+    "doctor_name": "DB Lee",
+    "id": "323c3905-3f7e-49f9-abe5-ee6b8866c753",
+    "__partitionkey": "9754"
+  },
+  {
+    "appointment_id": "180ee054-68bc-4dfe-a161-2ef871328248",
+    "patient_id": 1549346372,
+    "purpose": "SUPER SICK",
+    "start_time": "2021-08-13T17:00:00",
+    "end_time": "2021-08-13T17:30:00",
+    "doctor_name": "TEST",
+    "id": "70c8538a-294a-4ce7-adf6-e0f0f12bfc90",
+    "__partitionkey": "1667"
+  },
+  {
+    "appointment_id": "dc8eba4a-b378-4b3a-a747-ccc9c2f92b4a",
+    "patient_id": 156424868,
+    "purpose": "Sick",
+    "start_time": "2021-06-12T12:00:00",
+    "end_time": "2021-06-12T12:30:00",
+    "doctor_name": "TEST",
+    "id": "2c4537d4-86a9-4405-b5b6-0ae3532e1e2c",
+    "__partitionkey": "4108"
+  },
+  {
+    "appointment_id": "4453f253-c21e-4a46-bd1a-31b99e620590",
+    "patient_id": 1549346372,
+    "purpose": "SUPER SICK",
+    "start_time": "2021-09-01T17:00:00",
+    "end_time": "2021-09-01T17:30:00",
+    "doctor_name": "Travis Hilbert",
+    "id": "5678ec33-d922-4630-8d57-e69926694ec6",
+    "__partitionkey": "7007"
+  },
+  {
+    "appointment_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "patient_id": 1111,
+    "purpose": "Follow up",
+    "start_time": "2021-06-20T20:05:45.968Z",
+    "end_time": "2021-06-20T20:06:00.968Z",
+    "doctor_name": "Dr. Travis",
+    "id": "string",
+    "__partitionkey": "string"
+  },
+  {
+    "appointment_id": "5aee5fa5-543c-4b9b-abdf-8d1c115e4d4f",
+    "patient_id": 1940,
+    "purpose": null,
+    "start_time": "2021-06-01T12:15:43.6561473-07:00",
+    "end_time": "2021-06-01T12:45:43.6561483-07:00",
+    "doctor_name": "DB Lee",
+    "id": "8f3e781c-4635-4de6-a832-98f17d6d46a2",
+    "__partitionkey": "6009"
+  },
+  {
+    "appointment_id": "d8b613b5-5b9a-4df1-856a-a2529f8688c1",
+    "patient_id": 1549346372,
+    "purpose": "im sick",
+    "start_time": "2021-08-13T00:00:00",
+    "end_time": "2021-08-13T00:30:00",
+    "doctor_name": "Jackson",
+    "id": "2b86cb02-454e-4c24-9f6f-4029eda01947",
+    "__partitionkey": "2983"
+  },
+  {
+    "appointment_id": "0a4577ed-3d15-47cc-a3b2-762c9b488f48",
+    "patient_id": 1549346372,
+    "purpose": "I feel really sick. I think i have the flu",
+    "start_time": "2021-09-01T00:00:00",
+    "end_time": "2021-09-01T00:30:00",
+    "doctor_name": "Doctor smith",
+    "id": "ec566ed8-dfad-4a58-a5fd-46dda8584756",
+    "__partitionkey": "1396"
+  }]

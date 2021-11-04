@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EAE.Solutions.CosmosDB.SQL" Version="0.7.1" />
+    <PackageReference Include="EAE.Solutions.CosmosDB.SQL.ChangeFeed" Version="0.7.1" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="5.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.11.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Solutions.PatientHub.BatchInferenceService\Microsoft.Solutions.PatientHub.BatchInferenceService.csproj" />
+    <ProjectReference Include="..\Microsoft.Solutions.PatientHub.PatientService\Microsoft.Solutions.PatientHub.PatientService.csproj" />
+  </ItemGroup>
+
+</Project>

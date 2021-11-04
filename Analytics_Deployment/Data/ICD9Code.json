@@ -1,0 +1,3701 @@
+[
+  {
+    "Code": "V86",
+    "Description": "Estrogen receptor positive status [ER+]",
+    "id": "e28fc683-2f72-4f88-b86d-925ddae7e0c0"
+  },
+  {
+    "Code": "V85",
+    "Description": "Body Mass Index less than 19, adult",
+    "id": "383f3276-f0b4-46b6-9b65-53a2c061a4e3"
+  },
+  {
+    "Code": "V71",
+    "Description": "Observation for suspected malignant neoplasm",
+    "id": "93e493bf-914b-41bd-9eec-f3b3a3730700"
+  },
+  {
+    "Code": "V69",
+    "Description": "Lack of physical exercise",
+    "id": "70d79c7a-9c3e-4f7f-b19f-7cec339dc2fa"
+  },
+  {
+    "Code": "V66",
+    "Description": "Convalescence following surgery",
+    "id": "2ae09faf-014b-423d-b0a8-b3404e00ed04"
+  },
+  {
+    "Code": "V64",
+    "Description": "Vaccination not carried out, unspecified reason",
+    "id": "49013df9-b104-401a-8239-41d86e362bd3"
+  },
+  {
+    "Code": "V63",
+    "Description": "Residence remote from hospital or other health care facility",
+    "id": "653a8520-ef40-4566-8ab8-9799321dd505"
+  },
+  {
+    "Code": "V62",
+    "Description": "Unemployment",
+    "id": "feac456c-5576-4e7a-b47b-15cfe9da1c3f"
+  },
+  {
+    "Code": "V61",
+    "Description": "Family disruption due to family member on military deployment",
+    "id": "da3655f9-82df-4dc5-af1a-6073592d7d05"
+  },
+  {
+    "Code": "V60",
+    "Description": "Lack of housing",
+    "id": "1715be6f-ee60-4b85-9b13-5568e27e7fb3"
+  },
+  {
+    "Code": "V58",
+    "Description": "Encounter for radiotherapy",
+    "id": "383f6d3e-7dc6-4c73-9287-cf0356a58343"
+  },
+  {
+    "Code": "V17",
+    "Description": "Family history of psychiatric condition",
+    "id": "72f9636f-18e7-459c-ab16-df45505216c3"
+  },
+  {
+    "Code": "V16",
+    "Description": "Family history of malignant neoplasm of gastrointestinal tract",
+    "id": "bb727c75-4aa5-47fd-aaed-b422c5bc5b67"
+  },
+  {
+    "Code": "V15",
+    "Description": "Personal history of surgery to heart and great vessels, presenting hazards to health",
+    "id": "b66ec9dc-a118-44f1-85bd-ea3c9c7f3553"
+  },
+  {
+    "Code": "V14",
+    "Description": "Personal history of allergy to penicillin",
+    "id": "e14973c8-e842-4bff-a49e-4ce0bb287ff8"
+  },
+  {
+    "Code": "V12",
+    "Description": "Personal history of unspecified infectious and parasitic disease",
+    "id": "2a9a657c-bec6-475c-bb7c-e39a8df80fba"
+  },
+  {
+    "Code": "V11",
+    "Description": "Personal history of schizophrenia",
+    "id": "bf9ce815-a530-4ccd-8aeb-bf21b36506c4"
+  },
+  {
+    "Code": "V10",
+    "Description": "Personal history of malignant neoplasm of gastrointestinal tract, unspecified",
+    "id": "bf36b020-e5d5-468c-9fd7-29f45184650b"
+  },
+  {
+    "Code": "V09",
+    "Description": "Infection with microorganisms resistant to penicillins",
+    "id": "48b13637-7dbc-4752-98ae-a674c0ebbf6d"
+  },
+  {
+    "Code": "V08",
+    "Description": "Asymptomatic human immunodeficiency virus [HIV] infection status",
+    "id": "db9d3a39-7d94-4b06-bad4-792f8f529647"
+  },
+  {
+    "Code": "V06",
+    "Description": "Need for prophylactic vaccination and inoculation against cholera with typhoid-paratyphoid [cholera + TAB]",
+    "id": "321c8d22-2e59-43d1-9925-69dbd3ddcba1"
+  },
+  {
+    "Code": "V03",
+    "Description": "Need for prophylactic vaccination and inoculation against cholera alone",
+    "id": "cf654cbf-fa64-4b1d-bb37-80a473f4f84f"
+  },
+  {
+    "Code": "V02",
+    "Description": "Carrier or suspected carrier of cholera",
+    "id": "722176ac-559b-4472-9d8d-08e8ed797abb"
+  },
+  {
+    "Code": "q",
+    "Description": "N/A",
+    "id": "10baf34e-03de-419f-b403-cd65678a9a78"
+  },
+  {
+    "Code": "Other",
+    "Description": "Other",
+    "id": "af5d80c1-04fa-48db-8f3a-250bec3f1f48"
+  },
+  {
+    "Code": "E987",
+    "Description": "Falling from residential premises, undetermined whether accidentally or purposely inflicted",
+    "id": "0f8dbeb4-2fd2-4b85-b006-77f70c41e646"
+  },
+  {
+    "Code": "E968",
+    "Description": "Assault by fire",
+    "id": "9ed6b678-9ba8-4fa1-847d-1974a533dc51"
+  },
+  {
+    "Code": "E932",
+    "Description": "Adrenal cortical steroids causing adverse effects in therapeutic use",
+    "id": "d1bf4a2b-f583-43e7-aae3-eceb945c944a"
+  },
+  {
+    "Code": "E931",
+    "Description": "Sulfonamides causing adverse effects in therapeutic use",
+    "id": "57173ab2-d82f-49e5-9a01-ab9b0b65a05f"
+  },
+  {
+    "Code": "E930",
+    "Description": "Penicillins causing adverse effects in therapeutic use",
+    "id": "55ee0180-678d-46d7-b7e6-b71ccd4a7de1"
+  },
+  {
+    "Code": "E928",
+    "Description": "Prolonged stay in weightless environment",
+    "id": "09af2043-ad61-46b2-88a7-517d50936f9b"
+  },
+  {
+    "Code": "E927",
+    "Description": "Overexertion from sudden strenuous movement",
+    "id": "692b2e4c-4b37-428e-9f03-6073e52a1021"
+  },
+  {
+    "Code": "E924",
+    "Description": "Accident caused by hot liquids and vapors, including steam",
+    "id": "21ea8225-b824-4095-9bdb-ad048e7599dc"
+  },
+  {
+    "Code": "E919",
+    "Description": "Accidents caused by agricultural machines",
+    "id": "5deb4457-f794-4f3c-a6a1-34ff1f9afff9"
+  },
+  {
+    "Code": "E917",
+    "Description": "Striking against or struck accidentally by objects or persons in sports",
+    "id": "2659acb3-b05d-4fcf-bf7c-692c47ba46e4"
+  },
+  {
+    "Code": "E916",
+    "Description": "Struck accidentally by falling object",
+    "id": "3f08f524-b51f-4c27-8070-640917e23fa8"
+  },
+  {
+    "Code": "E912",
+    "Description": "Inhalation and ingestion of other object causing obstruction of respiratory tract or suffocation",
+    "id": "46370277-579b-4280-a705-c0919141c865"
+  },
+  {
+    "Code": "E906",
+    "Description": "Dog bite",
+    "id": "6cfb4b27-675f-47c6-a116-192fe6a9ae4d"
+  },
+  {
+    "Code": "E900",
+    "Description": "Accident caused by excessive heat due to weather conditions",
+    "id": "87fb2d35-1875-4e53-a7ad-c1ce166fa989"
+  },
+  {
+    "Code": "E888",
+    "Description": "Fall resulting in striking against sharp object",
+    "id": "7d293b4e-b4d1-43f2-9085-b2253ebc9fe5"
+  },
+  {
+    "Code": "E887",
+    "Description": "Fracture, cause unspecified",
+    "id": "e9615478-d431-47ce-84e9-756158a50a30"
+  },
+  {
+    "Code": "E886",
+    "Description": "Fall on same level from collision, pushing, or shoving, by or with other person in sports",
+    "id": "e743a748-a9fb-4552-85ad-975dc03aa0b9"
+  },
+  {
+    "Code": "E885",
+    "Description": "Fall from (nonmotorized) scooter",
+    "id": "95ff1177-337d-4dc3-b893-e8238fc61791"
+  },
+  {
+    "Code": "999",
+    "Description": "Venereal disease, unspecified",
+    "id": "f175b5f5-103a-4e5a-9d46-c123bcdf4a08"
+  },
+  {
+    "Code": "998",
+    "Description": "Other specified venereal diseases",
+    "id": "72bbeaa2-6bdc-4c3a-8bdb-664b26948815"
+  },
+  {
+    "Code": "997",
+    "Description": "Nervous system complication, unspecified",
+    "id": "f04748aa-adbe-4a35-a6ca-a0f59be1244a"
+  },
+  {
+    "Code": "996",
+    "Description": "Mechanical complication of unspecified cardiac device, implant, and graft",
+    "id": "7977598c-471d-46a5-bcde-cc545e62bf31"
+  },
+  {
+    "Code": "995",
+    "Description": "Other anaphylactic reaction",
+    "id": "ed937930-c2f3-4f22-bef5-fd94ca05b53e"
+  },
+  {
+    "Code": "992",
+    "Description": "Granuloma inguinale",
+    "id": "4ca86999-70e5-48c0-9d3a-6ac81d312b79"
+  },
+  {
+    "Code": "991",
+    "Description": "Lymphogranuloma venereum",
+    "id": "083d434d-6114-4ed4-95a0-dbd5fa167955"
+  },
+  {
+    "Code": "989",
+    "Description": "Toxic effect of hydrocyanic acid and cyanides",
+    "id": "dd30d0ce-3bf7-431a-83e1-18a6cf61a71b"
+  },
+  {
+    "Code": "986",
+    "Description": "Toxic effect of carbon monoxide",
+    "id": "0c1f921c-9d7f-4463-8999-6fbd3c8879d4"
+  },
+  {
+    "Code": "983",
+    "Description": "Toxic effect of corrosive aromatics",
+    "id": "c07d9316-a668-48e8-9175-eef27077edba"
+  },
+  {
+    "Code": "980",
+    "Description": "Gonococcal infection (acute) of lower genitourinary tract",
+    "id": "01746cac-74a2-43b2-86b0-d4b807e3e1df"
+  },
+  {
+    "Code": "977",
+    "Description": "Poisoning by dietetics",
+    "id": "2993132b-7ab6-4638-9204-72bbbd9111da"
+  },
+  {
+    "Code": "975",
+    "Description": "Poisoning by oxytocic agents",
+    "id": "464b501c-1967-4fe8-9bb8-f67bf5931bc4"
+  },
+  {
+    "Code": "972",
+    "Description": "Poisoning by cardiac rhythm regulators",
+    "id": "5245851b-1ff9-42f4-8976-6df2fecaf18d"
+  },
+  {
+    "Code": "971",
+    "Description": "Latent syphilis, unspecified",
+    "id": "39d56d97-3a60-4981-a641-0816dd219889"
+  },
+  {
+    "Code": "970",
+    "Description": "Late syphilis, unspecified",
+    "id": "d1f74e20-87e8-4593-8d70-7eef8ecfb1bd"
+  },
+  {
+    "Code": "935",
+    "Description": "Foreign body in mouth",
+    "id": "7dea29b0-5446-4a71-b15b-80cc7c1c6b18"
+  },
+  {
+    "Code": "934",
+    "Description": "Foreign body in trachea",
+    "id": "9c766ed9-1c9c-434f-b2eb-a2e61f0d07df"
+  },
+  {
+    "Code": "933",
+    "Description": "Foreign body in pharynx",
+    "id": "f8eb59b4-898d-4e0d-b6f1-02f695e3accf"
+  },
+  {
+    "Code": "928",
+    "Description": "Crushing injury of thigh",
+    "id": "d306eafe-c8fa-4503-974a-4288560d971e"
+  },
+  {
+    "Code": "927",
+    "Description": "Crushing injury of shoulder region",
+    "id": "1d5715a2-1d36-4aa8-93fc-376ad00e78c1"
+  },
+  {
+    "Code": "924",
+    "Description": "Contusion of thigh",
+    "id": "6ac448d5-ba4b-4e51-ade1-064a7c965b42"
+  },
+  {
+    "Code": "923",
+    "Description": "Contusion of shoulder region",
+    "id": "a064f1e1-15fe-4084-9982-47889d8b0fd9"
+  },
+  {
+    "Code": "922",
+    "Description": "Contusion of breast",
+    "id": "5eab9db2-d58a-400b-a247-fe13226e3875"
+  },
+  {
+    "Code": "920",
+    "Description": "Contusion of face, scalp, and neck except eye(s)",
+    "id": "b8354795-20fa-47d1-b30e-d39c703c0ad3"
+  },
+  {
+    "Code": "919",
+    "Description": "Unspecified secondary syphilis",
+    "id": "466cf2eb-58ff-40c7-907f-9ddaa8c13e04"
+  },
+  {
+    "Code": "918",
+    "Description": "Superficial injury of eyelids and periocular area",
+    "id": "2a812e0a-0a3f-44d2-bacd-4eabbb1c3f39"
+  },
+  {
+    "Code": "916",
+    "Description": "Abrasion or friction burn of hip, thigh, leg, and ankle, without mention of infection",
+    "id": "79e12349-8213-421d-bfa9-389ca49d4e1d"
+  },
+  {
+    "Code": "913",
+    "Description": "Secondary syphilis of skin or mucous membranes",
+    "id": "1c8273bb-b4de-4c1b-a241-2c827ae06637"
+  },
+  {
+    "Code": "910",
+    "Description": "Genital syphilis (primary)",
+    "id": "fa6190be-450a-4b24-9943-4a4e599e8479"
+  },
+  {
+    "Code": "909",
+    "Description": "Congenital syphilis, unspecified",
+    "id": "77876ddb-ad34-4ac5-8b5c-1b416becb39d"
+  },
+  {
+    "Code": "907",
+    "Description": "Late congenital syphilis, unspecified",
+    "id": "acdd3e89-6e8b-4b72-89ab-c5a9847f8e3c"
+  },
+  {
+    "Code": "875",
+    "Description": "Open wound of chest (wall), without mention of complication",
+    "id": "d13acad8-cb23-487e-af9e-0c7f2b34273f"
+  },
+  {
+    "Code": "873",
+    "Description": "Open wound of scalp, without mention of complication",
+    "id": "544e51ec-cd0a-49f0-b876-011d34a4c2f6"
+  },
+  {
+    "Code": "870",
+    "Description": "Relapsing fever, louse-borne",
+    "id": "1702b967-7c2f-4ecb-a4b0-ac2399f4783e"
+  },
+  {
+    "Code": "868",
+    "Description": "Injury to other intra-abdominal organs without mention of open wound into cavity, unspecified intra-abdominal organ",
+    "id": "864a589d-40d3-4d18-b114-a9eedabf1179"
+  },
+  {
+    "Code": "867",
+    "Description": "Enteritis due to enterovirus nec",
+    "id": "82cc35be-5ba2-4847-b2ac-e294d477532f"
+  },
+  {
+    "Code": "866",
+    "Description": "Enteritis due to astrovirus",
+    "id": "c9d94f33-eb83-4b3d-8b58-ae8bfd08a98f"
+  },
+  {
+    "Code": "865",
+    "Description": "Enteritis due to calicivirus",
+    "id": "c0a6023b-3171-4f63-8f86-7744b3c2e3e6"
+  },
+  {
+    "Code": "864",
+    "Description": "Enteritis due to other small round viruses [SRV's]",
+    "id": "d10c5a61-3ae2-4d8f-895d-72519fbe8326"
+  },
+  {
+    "Code": "863",
+    "Description": "Enteritis due to norwalk virus",
+    "id": "7f80bc01-117e-47d2-8d95-12589d3aa4ee"
+  },
+  {
+    "Code": "862",
+    "Description": "Enteritis due to adenovirus",
+    "id": "a25d81f1-f432-403b-bdf4-2781b2f98b14"
+  },
+  {
+    "Code": "861",
+    "Description": "Enteritis due to rotavirus",
+    "id": "ea176e6b-e0d4-40d8-a056-213feb8daca3"
+  },
+  {
+    "Code": "860",
+    "Description": "Chagas' disease with heart involvement",
+    "id": "f25d6f02-e686-4e2d-98ee-0a8515ad3286"
+  },
+  {
+    "Code": "854",
+    "Description": "Cutaneous leishmaniasis, American",
+    "id": "5fb082d7-2c34-4e6d-8ce4-209b24736e84"
+  },
+  {
+    "Code": "853",
+    "Description": "Cutaneous leishmaniasis, Ethiopian",
+    "id": "d3e91ec0-8f2c-43f1-982f-1c840918c393"
+  },
+  {
+    "Code": "852",
+    "Description": "Cutaneous leishmaniasis, Asian desert",
+    "id": "88f09399-fca6-4f8d-a766-d2fbf4eef676"
+  },
+  {
+    "Code": "851",
+    "Description": "Cutaneous leishmaniasis, urban",
+    "id": "3c191061-7169-44b2-94d4-f6ebdcbfe5de"
+  },
+  {
+    "Code": "831",
+    "Description": "Trench fever",
+    "id": "05b9c5a7-1d2f-4fd3-a20e-b8587f27b7dc"
+  },
+  {
+    "Code": "826",
+    "Description": "Closed fracture of one or more phalanges of foot",
+    "id": "d1d40801-c3b7-4434-9210-9f610c70a607"
+  },
+  {
+    "Code": "825",
+    "Description": "Fracture of calcaneus, closed",
+    "id": "3d623143-21ca-4280-94b3-4d18b7bedc60"
+  },
+  {
+    "Code": "824",
+    "Description": "Fracture of medial malleolus, closed",
+    "id": "9a9791f6-2314-4a4c-99af-4d0b5cf9f55c"
+  },
+  {
+    "Code": "823",
+    "Description": "Queensland tick typhus",
+    "id": "e4c4923a-ebef-4823-8985-e3cc48e06e96"
+  },
+  {
+    "Code": "822",
+    "Description": "North Asian tick fever",
+    "id": "75195ff8-5c84-43bb-954a-332560fbd48d"
+  },
+  {
+    "Code": "821",
+    "Description": "Boutonneuse fever",
+    "id": "9057aced-c283-43b2-be0c-a23bc3808ad8"
+  },
+  {
+    "Code": "820",
+    "Description": "Spotted fevers",
+    "id": "ed35bec4-b1f1-4869-9887-2c037ec81f8a"
+  },
+  {
+    "Code": "82",
+    "Description": "Intestinal infection due to aerobacter aerogenes",
+    "id": "c0aac25f-5a3f-4861-8bca-449b24228421"
+  },
+  {
+    "Code": "816",
+    "Description": "Closed fracture of phalanx or phalanges of hand, unspecified",
+    "id": "1b0d1484-159a-40cd-a165-27d8be855404"
+  },
+  {
+    "Code": "815",
+    "Description": "Closed fracture of metacarpal bone(s), site unspecified",
+    "id": "928983ea-c731-4b1e-8ed6-87f19760d02f"
+  },
+  {
+    "Code": "814",
+    "Description": "Closed fracture of carpal bone, unspecified",
+    "id": "db1bdaac-7d69-4ae5-ad47-9e06eb917b92"
+  },
+  {
+    "Code": "813",
+    "Description": "Closed fracture of upper end of forearm, unspecified",
+    "id": "add6292f-f9f9-4f5e-a85f-56d6c720e573"
+  },
+  {
+    "Code": "812",
+    "Description": "Scrub typhus",
+    "id": "2aacf55d-43c6-4ee2-84dc-42642b73a904"
+  },
+  {
+    "Code": "810",
+    "Description": "Murine (endemic) typhus",
+    "id": "bfa57ea4-5e58-4ab4-b1cc-c4b8920df93b"
+  },
+  {
+    "Code": "808",
+    "Description": "Closed fracture of acetabulum",
+    "id": "3600c495-524e-4de9-952c-f8badd5dab3c"
+  },
+  {
+    "Code": "790",
+    "Description": "Adenovirus infection in conditions classified elsewhere and of unspecified site",
+    "id": "183d3faa-b4b6-45a5-ada5-22919afa0d0e"
+  },
+  {
+    "Code": "79",
+    "Description": "Unspecified protozoal intestinal disease",
+    "id": "2ade83e3-291c-43aa-8cf8-e30509c053a8"
+  },
+  {
+    "Code": "789",
+    "Description": "Abdominal pain, unspecified site",
+    "id": "f6a0d11f-d341-4a2f-864a-45f72167f09f"
+  },
+  {
+    "Code": "788",
+    "Description": "Renal colic",
+    "id": "5dd9c780-fa83-4be1-a579-12b4db6dae20"
+  },
+  {
+    "Code": "787",
+    "Description": "Arenaviral hemorrhagic fever",
+    "id": "f34f833c-c94e-4c61-b1f1-bca7c5706d47"
+  },
+  {
+    "Code": "786",
+    "Description": "Hemorrhagic nephrosonephritis",
+    "id": "5dbd3a19-77f4-4eef-a260-b86b6139c05f"
+  },
+  {
+    "Code": "785",
+    "Description": "Cytomegaloviral disease",
+    "id": "70626526-97d1-4572-bb7a-2ec88e5056cc"
+  },
+  {
+    "Code": "784",
+    "Description": "Foot and mouth disease",
+    "id": "583b43b8-38d6-4696-bbef-badbc5cf96a5"
+  },
+  {
+    "Code": "783",
+    "Description": "Cat-scratch disease",
+    "id": "e7194d93-a130-4482-a061-6049ce8adabf"
+  },
+  {
+    "Code": "782",
+    "Description": "Sweating fever",
+    "id": "80690b41-3a9f-498b-a3c6-28fdb9b9fd84"
+  },
+  {
+    "Code": "781",
+    "Description": "Abnormal involuntary movements",
+    "id": "432fea78-9447-48fa-a216-61f89080cc49"
+  },
+  {
+    "Code": "780",
+    "Description": "Molluscum contagiosum",
+    "id": "4ace0129-d180-4f37-8b3d-470c046122fe"
+  },
+  {
+    "Code": "78",
+    "Description": "Other specified protozoal intestinal diseases",
+    "id": "2c8d8a64-248f-4e55-9fb2-afafb651120b"
+  },
+  {
+    "Code": "759",
+    "Description": "Anomalies of spleen",
+    "id": "6918491a-66fd-45a0-ab19-9709bb130a47"
+  },
+  {
+    "Code": "758",
+    "Description": "Down's syndrome",
+    "id": "aeead3b0-a619-4ff5-9b51-415152ff4741"
+  },
+  {
+    "Code": "756",
+    "Description": "Anomalies of skull and face bones",
+    "id": "068c328a-f81a-48dd-898d-3e235621700b"
+  },
+  {
+    "Code": "729",
+    "Description": "Mumps without mention of complication",
+    "id": "f8bae300-4e8c-43d9-9c67-a975c29f1d2a"
+  },
+  {
+    "Code": "728",
+    "Description": "Mumps with unspecified complication",
+    "id": "6e71cd75-2631-40dc-a7ec-c34825173a2f"
+  },
+  {
+    "Code": "727",
+    "Description": "Synovitis and tenosynovitis, unspecified",
+    "id": "a176299a-e1c8-4fa0-b1c3-6018e4a7df84"
+  },
+  {
+    "Code": "726",
+    "Description": "Adhesive capsulitis of shoulder",
+    "id": "0fb7fc3e-7e06-44a5-8689-6843a39932af"
+  },
+  {
+    "Code": "725",
+    "Description": "Polymyalgia rheumatica",
+    "id": "9e88373b-4f66-4511-b6ee-6ad5e4f5b889"
+  },
+  {
+    "Code": "724",
+    "Description": "Spinal stenosis, unspecified region",
+    "id": "fa3da284-6bec-4b03-b05b-181396e27c26"
+  },
+  {
+    "Code": "723",
+    "Description": "Mumps pancreatitis",
+    "id": "a18f9de2-d4b0-42f1-af89-55c3abec7ea0"
+  },
+  {
+    "Code": "722",
+    "Description": "Mumps encephalitis",
+    "id": "3c0b268b-dae0-43bf-8392-1e5002ddcf0d"
+  },
+  {
+    "Code": "721",
+    "Description": "Mumps meningitis",
+    "id": "a4e778a9-f35d-478d-b723-7e1cb40c9b12"
+  },
+  {
+    "Code": "720",
+    "Description": "Mumps orchitis",
+    "id": "699bd302-78cb-445f-a122-c32cb9792ada"
+  },
+  {
+    "Code": "719",
+    "Description": "Effusion of joint, site unspecified",
+    "id": "2f047e07-c823-4802-acd9-8e3c12f2cdfc"
+  },
+  {
+    "Code": "718",
+    "Description": "Articular cartilage disorder, site unspecified",
+    "id": "0dbe296a-92cb-4f57-939c-f2a8cb1a377d"
+  },
+  {
+    "Code": "717",
+    "Description": "Old bucket handle tear of medial meniscus",
+    "id": "66f79d58-3c3f-4c85-a22d-090b76754df3"
+  },
+  {
+    "Code": "716",
+    "Description": "Kaschin-Beck disease, site unspecified",
+    "id": "11e45ee7-0d2e-4781-abd4-b427414d77a4"
+  },
+  {
+    "Code": "715",
+    "Description": "Osteoarthrosis, generalized, site unspecified",
+    "id": "57084c87-67e2-47c3-a01e-ea957ad0f835"
+  },
+  {
+    "Code": "714",
+    "Description": "Rheumatoid arthritis",
+    "id": "c79d7b01-cef6-4165-9a86-8818e215c065"
+  },
+  {
+    "Code": "569",
+    "Description": "Rubella without mention of complication",
+    "id": "511f25a4-0b35-4dc8-a3b6-9b9c87ec074e"
+  },
+  {
+    "Code": "568",
+    "Description": "Rubella with unspecified complications",
+    "id": "a39cac00-b3e9-4dce-be22-0e87a5f5d955"
+  },
+  {
+    "Code": "567",
+    "Description": "Peritonitis in infectious diseases classified elsewhere",
+    "id": "42c08c00-ff5e-4157-97fc-d490a59a1321"
+  },
+  {
+    "Code": "566",
+    "Description": "Abscess of anal and rectal regions",
+    "id": "93b73dd9-1e9b-40e4-b096-9d927d9fe67f"
+  },
+  {
+    "Code": "565",
+    "Description": "Anal fissure",
+    "id": "9bf61754-cfae-4ce2-b43e-f8f85eecd741"
+  },
+  {
+    "Code": "564",
+    "Description": "Constipation, unspecified",
+    "id": "d3ab9dcc-7c21-4fe9-84dd-f07c519a420c"
+  },
+  {
+    "Code": "562",
+    "Description": "Diverticulosis of small intestine (without mention of hemorrhage)",
+    "id": "2101ed83-201c-4e51-9910-a946c4e7b254"
+  },
+  {
+    "Code": "560",
+    "Description": "Intussusception",
+    "id": "e09e44d4-9645-40c9-b620-831c189e925e"
+  },
+  {
+    "Code": "558",
+    "Description": "Measles with unspecified complication",
+    "id": "fa2b6a96-bfb6-4d3f-8db0-03a9322228d1"
+  },
+  {
+    "Code": "557",
+    "Description": "Acute vascular insufficiency of intestine",
+    "id": "158718a9-92fb-4ef8-9398-63fb830f3576"
+  },
+  {
+    "Code": "556",
+    "Description": "Ulcerative (chronic) enterocolitis",
+    "id": "4fc35049-8263-4d69-8b26-4700e40714f8"
+  },
+  {
+    "Code": "555",
+    "Description": "Regional enteritis of small intestine",
+    "id": "7acc8cdc-bc2d-4f85-a16f-afcfc4003bb6"
+  },
+  {
+    "Code": "553",
+    "Description": "Femoral hernia without mention of obstruction of gangrene, unilateral or unspecified(not specified as recurrent)",
+    "id": "de93abf7-cc5a-41c3-82ed-c1c37029df2c"
+  },
+  {
+    "Code": "552",
+    "Description": "Postmeasles otitis media",
+    "id": "2e86b59c-ede1-469c-9f90-99cb249c5004"
+  },
+  {
+    "Code": "551",
+    "Description": "Postmeasles pneumonia",
+    "id": "508aaf43-9d30-4ead-9981-3ff4bd11e712"
+  },
+  {
+    "Code": "550",
+    "Description": "Postmeasles encephalitis",
+    "id": "1b6b1c84-256e-4ae9-8479-5929330420bb"
+  },
+  {
+    "Code": "543",
+    "Description": "Herpetic meningoencephalitis",
+    "id": "7ff7ad96-e28a-4aba-abf6-f67658fd3abe"
+  },
+  {
+    "Code": "541",
+    "Description": "Appendicitis, unqualified",
+    "id": "7d136f93-aa69-443b-aad4-6b87e646b309"
+  },
+  {
+    "Code": "540",
+    "Description": "Eczema herpeticum",
+    "id": "d233c3b6-9a1b-4b18-ace0-168ecf918908"
+  },
+  {
+    "Code": "54",
+    "Description": "Food poisoning due to Vibrio parahaemolyticus",
+    "id": "9b325076-16c5-4b8d-ba94-7bb13fe9eb43"
+  },
+  {
+    "Code": "538",
+    "Description": "Gastrointestinal mucositis (ulcerative)",
+    "id": "fa92873b-292a-4c80-bfea-949d489696a9"
+  },
+  {
+    "Code": "537",
+    "Description": "Acquired hypertrophic pyloric stenosis",
+    "id": "cf8166b6-5287-48e4-86a8-a6aca7faa873"
+  },
+  {
+    "Code": "536",
+    "Description": "Achlorhydria",
+    "id": "283a6cd0-530f-47bc-8750-57664c54a0ef"
+  },
+  {
+    "Code": "535",
+    "Description": "Acute gastritis, without mention of hemorrhage",
+    "id": "c45be1ce-b1ac-40cc-9d34-86c92d7c51f7"
+  },
+  {
+    "Code": "534",
+    "Description": "Acute gastrojejunal ulcer with hemorrhage, without mention of obstruction",
+    "id": "bf546f60-e21a-45fe-a309-e51e040a3f1c"
+  },
+  {
+    "Code": "533",
+    "Description": "Acute peptic ulcer of unspecified site with hemorrhage, without mention of obstruction",
+    "id": "4c8bd0c4-117f-4433-9ab7-c1de7789c679"
+  },
+  {
+    "Code": "532",
+    "Description": "Acute duodenal ulcer with hemorrhage, without mention of obstruction",
+    "id": "400c0853-c722-448d-9e49-50b73c103f54"
+  },
+  {
+    "Code": "531",
+    "Description": "Acute gastric ulcer with hemorrhage, without mention of obstruction",
+    "id": "701ff3a4-a781-4c7a-9b18-c7626fa9ccdd"
+  },
+  {
+    "Code": "530",
+    "Description": "Herpes zoster with meningitis",
+    "id": "d4657ea3-5a53-490d-a79c-a0fdf80a0a2a"
+  },
+  {
+    "Code": "53",
+    "Description": "Food poisoning due to other Clostridia",
+    "id": "793f83ca-791e-4331-a561-5d6df0016e3d"
+  },
+  {
+    "Code": "529",
+    "Description": "Varicella without mention of complication",
+    "id": "7ce808d4-724b-4a50-81d0-cb598ceaeed7"
+  },
+  {
+    "Code": "528",
+    "Description": "Chickenpox with unspecified complication",
+    "id": "2bb28809-91cb-40a7-aaf3-386eda24e6fa"
+  },
+  {
+    "Code": "527",
+    "Description": "Chickenpox with other specified complications",
+    "id": "84bb91b3-7eb3-450a-9979-e89b60c311a7"
+  },
+  {
+    "Code": "524",
+    "Description": "Major anomalies of jaw size, unspecified anomaly",
+    "id": "9dbce6cb-03ec-4492-b2fb-fb090356e5ff"
+  },
+  {
+    "Code": "523",
+    "Description": "Acute gingivitis, plaque induced",
+    "id": "8ee44f49-eb63-4ca3-b0a0-06eb3d2327dc"
+  },
+  {
+    "Code": "522",
+    "Description": "Postvaricella myelitis",
+    "id": "7a48adb7-fdf9-4096-8619-9a42917e7d9c"
+  },
+  {
+    "Code": "521",
+    "Description": "Varicella (hemorrhagic) pneumonitis",
+    "id": "1dcfc384-302a-48fd-a558-870dae3b2a79"
+  },
+  {
+    "Code": "52",
+    "Description": "Food poisoning due to Clostridium perfringens (C. welchii)",
+    "id": "b084baaf-4001-4096-8b05-e90e892a7585"
+  },
+  {
+    "Code": "519",
+    "Description": "Paravaccinia, unspecified",
+    "id": "9a317ab1-8671-490e-a2d5-463066c3d5b4"
+  },
+  {
+    "Code": "518",
+    "Description": "Pulmonary collapse",
+    "id": "47bdea4f-8fc3-46b0-8a25-9cadb547313f"
+  },
+  {
+    "Code": "517",
+    "Description": "Rheumatic pneumonia",
+    "id": "dbfd4717-d118-4ae7-a5ac-80285283e72a"
+  },
+  {
+    "Code": "516",
+    "Description": "Pulmonary alveolar proteinosis",
+    "id": "3ed7342c-79b4-485e-b2f3-b22e01df308f"
+  },
+  {
+    "Code": "515",
+    "Description": "Postinflammatory pulmonary fibrosis",
+    "id": "dc6da63f-3a7a-4ed5-b3ef-58bf0e2c0926"
+  },
+  {
+    "Code": "514",
+    "Description": "Pulmonary congestion and hypostasis",
+    "id": "677c0e03-48ac-4b47-9ddd-248c79e51b98"
+  },
+  {
+    "Code": "513",
+    "Description": "Abscess of lung",
+    "id": "5204b585-1057-4d91-984a-8d7806cf0c93"
+  },
+  {
+    "Code": "512",
+    "Description": "Contagious pustular dermatitis",
+    "id": "83b3c2bf-b41b-467f-888f-ad5d5b2aa2ce"
+  },
+  {
+    "Code": "511",
+    "Description": "Pseudocowpox",
+    "id": "cfc9a102-0941-4133-8007-9fdb87788020"
+  },
+  {
+    "Code": "510",
+    "Description": "Empyema with fistula",
+    "id": "668b1e02-3cb3-460b-bd0d-a60bc721a2ae"
+  },
+  {
+    "Code": "508",
+    "Description": "Acute pulmonary manifestations due to radiation",
+    "id": "65bbd0e5-bab3-4140-9e8f-4070d760fedf"
+  },
+  {
+    "Code": "507",
+    "Description": "Pneumonitis due to inhalation of food or vomitus",
+    "id": "2f84282b-bdb5-4574-80f5-1750f15b8a26"
+  },
+  {
+    "Code": "506",
+    "Description": "Bronchitis and pneumonitis due to fumes and vapors",
+    "id": "723d5f89-3b7c-4ee9-a44b-f44b179f40a4"
+  },
+  {
+    "Code": "501",
+    "Description": "Asbestosis",
+    "id": "a17e7b1f-5763-496d-811c-ef6ea70aa701"
+  },
+  {
+    "Code": "500",
+    "Description": "Coal workers' pneumoconiosis",
+    "id": "2152b0f3-872d-4257-86b7-48b53ad3930d"
+  },
+  {
+    "Code": "5",
+    "Description": "Coal workers' pneumoconiosis",
+    "id": "863905cd-2b5d-4ea6-a43c-93bb14e56456"
+  },
+  {
+    "Code": "496",
+    "Description": "Chronic airway obstruction, not elsewhere classified",
+    "id": "b4a1c879-162f-4962-b30f-c8fa19110776"
+  },
+  {
+    "Code": "495",
+    "Description": "Farmers' lung",
+    "id": "0a531447-ae74-40e8-9abe-b4efa761cb2d"
+  },
+  {
+    "Code": "494",
+    "Description": "Bronchiectasis without acute exacerbation",
+    "id": "19986478-8a2e-4bf3-a789-6e2284065ebd"
+  },
+  {
+    "Code": "493",
+    "Description": "Extrinsic asthma, unspecified",
+    "id": "fcc06d29-8aaf-45a0-b626-265c6905a26b"
+  },
+  {
+    "Code": "492",
+    "Description": "Emphysematous bleb",
+    "id": "6ab45bec-8cc3-459c-bed6-b75402baafde"
+  },
+  {
+    "Code": "491",
+    "Description": "Meningitis due to adenovirus",
+    "id": "1c5ee9c9-ebff-4985-b471-f6bb7fe07a2e"
+  },
+  {
+    "Code": "490",
+    "Description": "Bronchitis, not specified as acute or chronic",
+    "id": "4f2472d7-d586-4fe2-bc86-9dccb873107d"
+  },
+  {
+    "Code": "49",
+    "Description": "Shigellosis, unspecified",
+    "id": "17ee474e-a325-42a7-a084-6f53521a2aff"
+  },
+  {
+    "Code": "487",
+    "Description": "Influenza with pneumonia",
+    "id": "8b7dee94-517d-4cb2-af58-d257a93a49ae"
+  },
+  {
+    "Code": "486",
+    "Description": "Pneumonia, organism unspecified",
+    "id": "80e92aaf-849f-4580-992f-e6212ba48c07"
+  },
+  {
+    "Code": "485",
+    "Description": "Bronchopneumonia, organism unspecified",
+    "id": "0d7a8620-be36-4702-a679-33312110db9c"
+  },
+  {
+    "Code": "484",
+    "Description": "Pneumonia in cytomegalic inclusion disease",
+    "id": "70ce2cbd-115d-4650-8151-ab1f9f5f4690"
+  },
+  {
+    "Code": "482",
+    "Description": "Pneumonia due to Klebsiella pneumoniae",
+    "id": "5f120ce4-e7e7-4a46-a434-f539cf7876ec"
+  },
+  {
+    "Code": "481",
+    "Description": "Pneumococcal pneumonia [Streptococcus pneumoniae pneumonia]",
+    "id": "15fb8b35-706d-4a29-afd6-569f886c8206"
+  },
+  {
+    "Code": "480",
+    "Description": "Pneumonia due to adenovirus",
+    "id": "98517201-436d-42e3-8ad9-b276caf6b10c"
+  },
+  {
+    "Code": "478",
+    "Description": "Other specified viral meningitis",
+    "id": "c28c92db-fbb7-4bed-a61d-7c3bd937ce62"
+  },
+  {
+    "Code": "477",
+    "Description": "Allergic rhinitis due to pollen",
+    "id": "7f8b3d03-fa76-4737-b378-20cc84984b08"
+  },
+  {
+    "Code": "475",
+    "Description": "Peritonsillar abscess",
+    "id": "e359c44a-31b8-4c00-8b28-24d349d6ec46"
+  },
+  {
+    "Code": "474",
+    "Description": "Chronic tonsillitis",
+    "id": "466132bc-0eaf-4e14-a144-c1991e220c72"
+  },
+  {
+    "Code": "473",
+    "Description": "Chronic maxillary sinusitis",
+    "id": "9bd896fb-745e-4b40-a29a-aaab252b1e54"
+  },
+  {
+    "Code": "472",
+    "Description": "Chronic rhinitis",
+    "id": "ae6f264e-6a19-49f4-ab62-71936aebe037"
+  },
+  {
+    "Code": "470",
+    "Description": "Deviated nasal septum",
+    "id": "0edf21c3-4d6e-443c-95fe-e97e0142e412"
+  },
+  {
+    "Code": "47",
+    "Description": "Deviated nasal septum",
+    "id": "49afc156-75be-4bc9-b2fd-c0ecf881da43"
+  },
+  {
+    "Code": "466",
+    "Description": "Acute bronchitis",
+    "id": "a7f2832b-5cff-42e8-aead-36d23ed075ea"
+  },
+  {
+    "Code": "465",
+    "Description": "Acute laryngopharyngitis",
+    "id": "72cee1d9-37b4-4582-bafc-a76cdad8af3a"
+  },
+  {
+    "Code": "464",
+    "Description": "Acute laryngitis without mention of obstruction",
+    "id": "c5e86fc0-8d8c-404f-8731-999ce1408240"
+  },
+  {
+    "Code": "463",
+    "Description": "Acute tonsillitis",
+    "id": "59adbf5c-7328-447f-bfb1-286431321f7d"
+  },
+  {
+    "Code": "462",
+    "Description": "Acute pharyngitis",
+    "id": "14684602-7842-4c7b-b10a-92a5f7861898"
+  },
+  {
+    "Code": "461",
+    "Description": "Acute maxillary sinusitis",
+    "id": "618915e1-25a1-4d9a-8f50-87735c108c5c"
+  },
+  {
+    "Code": "460",
+    "Description": "Acute nasopharyngitis [common cold]",
+    "id": "24e2e726-1c60-4530-a77f-ed5d5705db82"
+  },
+  {
+    "Code": "459",
+    "Description": "Hemorrhage, unspecified",
+    "id": "6cfee20f-515f-42ba-ab0d-dc50a6890821"
+  },
+  {
+    "Code": "458",
+    "Description": "Orthostatic hypotension",
+    "id": "a4b58e2a-b6fe-49ff-8563-821f52ca2456"
+  },
+  {
+    "Code": "457",
+    "Description": "Postmastectomy lymphedema syndrome",
+    "id": "0fb6093c-d076-4909-a8f9-4ef140a05ba0"
+  },
+  {
+    "Code": "456",
+    "Description": "Esophageal varices with bleeding",
+    "id": "21686391-66b1-49dd-975f-224c3566003e"
+  },
+  {
+    "Code": "455",
+    "Description": "Internal hemorrhoids without mention of complication",
+    "id": "77818c61-dd97-4466-b74f-09704154f66f"
+  },
+  {
+    "Code": "454",
+    "Description": "Varicose veins of lower extremities with ulcer",
+    "id": "87905db9-33f6-4f32-bcaa-110369908bc1"
+  },
+  {
+    "Code": "453",
+    "Description": "Budd-chiari syndrome",
+    "id": "225548ed-5085-4170-8190-e3f0b1142d6e"
+  },
+  {
+    "Code": "452",
+    "Description": "Portal vein thrombosis",
+    "id": "e5769e6b-4957-41b1-91ff-af6574a64ea9"
+  },
+  {
+    "Code": "451",
+    "Description": "Phlebitis and thrombophlebitis of superficial vessels of lower extremities",
+    "id": "d33d6389-72bb-453f-97ef-55a71a5bae7a"
+  },
+  {
+    "Code": "447",
+    "Description": "Arteriovenous fistula, acquired",
+    "id": "193696aa-2c20-4089-90a0-7b0b7610a77e"
+  },
+  {
+    "Code": "446",
+    "Description": "Polyarteritis nodosa",
+    "id": "e560abec-a017-449d-b301-e7b476c9aa7b"
+  },
+  {
+    "Code": "444",
+    "Description": "Embolism and thrombosis of thoracic aorta",
+    "id": "507c0f85-b3dd-483c-82f2-edc5dcc63a6a"
+  },
+  {
+    "Code": "443",
+    "Description": "Raynaud's syndrome",
+    "id": "95305431-d858-493b-b4dc-665f3d3871a9"
+  },
+  {
+    "Code": "442",
+    "Description": "Aneurysm of artery of upper extremity",
+    "id": "7ceb1785-57a1-4c82-9a7a-8d5d72edd89b"
+  },
+  {
+    "Code": "441",
+    "Description": "Dissection of aorta, unspecified site",
+    "id": "da263396-5f4d-478d-9faa-a7e1d7ed61b9"
+  },
+  {
+    "Code": "440",
+    "Description": "Atherosclerosis of aorta",
+    "id": "f0f1f6cb-c672-4529-95ed-4e73ad313428"
+  },
+  {
+    "Code": "438",
+    "Description": "Late effects of cerebrovascular disease, cognitive deficits",
+    "id": "9a15969f-259e-48b0-9ba1-2bce55509e07"
+  },
+  {
+    "Code": "437",
+    "Description": "Cerebral atherosclerosis",
+    "id": "81bf3b93-1d7b-4015-a9aa-c5d5ed8afe07"
+  },
+  {
+    "Code": "436",
+    "Description": "Acute, but ill-defined, cerebrovascular disease",
+    "id": "b27e11e5-792c-4e67-8ecd-0c7ab5afdf48"
+  },
+  {
+    "Code": "435",
+    "Description": "Basilar artery syndrome",
+    "id": "7e18045e-3841-4f79-8389-60b697e43d0d"
+  },
+  {
+    "Code": "434",
+    "Description": "Cerebral thrombosis without mention of cerebral infarction",
+    "id": "8dfef48f-29c6-4050-8d85-1d39a656f4df"
+  },
+  {
+    "Code": "433",
+    "Description": "Occlusion and stenosis of basilar artery without mention of cerebral infarction",
+    "id": "341a3a32-c2ac-4747-ab18-84c412568784"
+  },
+  {
+    "Code": "432",
+    "Description": "Nontraumatic extradural hemorrhage",
+    "id": "3e8e0be6-8d47-4f79-978b-cd53eeb13e20"
+  },
+  {
+    "Code": "431",
+    "Description": "Intracerebral hemorrhage",
+    "id": "d1b859bd-41ae-4fba-a7cc-2aee9eea4500"
+  },
+  {
+    "Code": "430",
+    "Description": "Subarachnoid hemorrhage",
+    "id": "846ce153-b930-4a34-bdce-7c1564ca04c5"
+  },
+  {
+    "Code": "429",
+    "Description": "Myocarditis, unspecified",
+    "id": "ee22b4c0-35e3-4a91-a40e-c538dc01a593"
+  },
+  {
+    "Code": "428",
+    "Description": "Congestive heart failure, unspecified",
+    "id": "8f0908b5-936e-4b2b-9ba4-30fd23430a79"
+  },
+  {
+    "Code": "427",
+    "Description": "Paroxysmal supraventricular tachycardia",
+    "id": "63ba7be3-58be-47cc-92f1-23431c870593"
+  },
+  {
+    "Code": "426",
+    "Description": "Atrioventricular block, complete",
+    "id": "524693d1-49ee-4628-a1e8-72b01e1ae816"
+  },
+  {
+    "Code": "425",
+    "Description": "Endomyocardial fibrosis",
+    "id": "d4ab1a30-323b-4be6-881f-f2fda71e0ec3"
+  },
+  {
+    "Code": "424",
+    "Description": "Mitral valve disorders",
+    "id": "19ce5762-3661-4024-b839-2dfb259c0628"
+  },
+  {
+    "Code": "423",
+    "Description": "Hemopericardium",
+    "id": "3a71377d-4548-4f41-a43f-ec9740815f67"
+  },
+  {
+    "Code": "422",
+    "Description": "Acute myocarditis in diseases classified elsewhere",
+    "id": "0cbee1d4-f5fa-4562-86ed-11459c081e70"
+  },
+  {
+    "Code": "421",
+    "Description": "Acute and subacute bacterial endocarditis",
+    "id": "b6ced57d-6166-4ff8-b363-1ca1cd7af204"
+  },
+  {
+    "Code": "420",
+    "Description": "Acute pericarditis in diseases classified elsewhere",
+    "id": "9d9992b5-96d1-4d84-bbc7-bdd45a7cfd58"
+  },
+  {
+    "Code": "42",
+    "Description": "Shigella boydii",
+    "id": "76ab5cb5-b4c6-4769-b65d-f2f8bf9eaecc"
+  },
+  {
+    "Code": "417",
+    "Description": "Pseudomonas infection in conditions classified elsewhere and of unspecified site",
+    "id": "0265f269-e4f0-4c42-9ebc-5050de42603f"
+  },
+  {
+    "Code": "416",
+    "Description": "Proteus (mirabilis) (morganii) infection in conditions classified elsewhere and of unspecified site",
+    "id": "3eb0a2d7-3bdb-4ba4-9d5e-e5f7719aaa28"
+  },
+  {
+    "Code": "415",
+    "Description": "Hemophilus influenzae [H. influenzae] infection in conditions classified elsewhere and of unspecified site",
+    "id": "bf49bba0-7b56-4bec-ba14-622d1e3274d4"
+  },
+  {
+    "Code": "414",
+    "Description": "Coronary atherosclerosis of unspecified type of vessel, native or graft",
+    "id": "2d5ec7bc-ed3e-45be-9f1d-1d705673fc34"
+  },
+  {
+    "Code": "413",
+    "Description": "Friedländer's bacillus infection in conditions classified elsewhere and of unspecified site",
+    "id": "0e0786f7-888e-4659-9bb2-358f119061f6"
+  },
+  {
+    "Code": "412",
+    "Description": "Old myocardial infarction",
+    "id": "7f8d7aef-612a-49ae-8725-648d9a4603f4"
+  },
+  {
+    "Code": "411",
+    "Description": "Postmyocardial infarction syndrome",
+    "id": "96dcc7d2-e044-4f25-b677-bb90b7aa2da5"
+  },
+  {
+    "Code": "410",
+    "Description": "Acute myocardial infarction of anterolateral wall, episode of care unspecified",
+    "id": "f67d4473-8031-436a-90b6-f2db7155ba2c"
+  },
+  {
+    "Code": "41",
+    "Description": "Shigella flexneri",
+    "id": "fb9ace6a-d5f4-4814-8ff8-d0e3c348e8ac"
+  },
+  {
+    "Code": "405",
+    "Description": "Malignant neoplasm of lip, unspecified, inner aspect",
+    "id": "3f387bc4-050d-45f5-91fe-b450d429bfe0"
+  },
+  {
+    "Code": "404",
+    "Description": "Hypertensive heart and chronic kidney disease, malignant, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified",
+    "id": "05569eb0-620e-4c37-b5ed-0689bf10ca47"
+  },
+  {
+    "Code": "403",
+    "Description": "High Mercury Levels",
+    "id": "12ed8a04-990f-49e4-a36c-574dd7eeae4f"
+  },
+  {
+    "Code": "402",
+    "Description": "Whipple's disease",
+    "id": "b60d504e-1da7-4f7a-b7cc-42d545c9289c"
+  },
+  {
+    "Code": "401",
+    "Description": "Rhinoscleroma",
+    "id": "7755283d-70e1-4e0a-a591-43da34005ac6"
+  },
+  {
+    "Code": "40",
+    "Description": "Shigella dysenteriae",
+    "id": "1d533895-6190-42a7-9fd0-1584b43d6749"
+  },
+  {
+    "Code": "398",
+    "Description": "Actinomycotic infection of other specified sites",
+    "id": "84334c28-8419-4db7-88be-8d0a66186371"
+  },
+  {
+    "Code": "397",
+    "Description": "Diseases of tricuspid valve",
+    "id": "1f4ac7fa-f71b-49d8-86b8-dc0a4cb44375"
+  },
+  {
+    "Code": "396",
+    "Description": "Mitral valve stenosis and aortic valve stenosis",
+    "id": "1267711a-6860-4b6d-a8ca-b51ff81d861b"
+  },
+  {
+    "Code": "394",
+    "Description": "Madura foot",
+    "id": "206ceafc-ef7f-417e-81ca-145eea55ba11"
+  },
+  {
+    "Code": "391",
+    "Description": "Pulmonary actinomycotic infection",
+    "id": "88cc16df-8962-4f3e-a92a-1cb15933fed9"
+  },
+  {
+    "Code": "389",
+    "Description": "Unspecified septicemia",
+    "id": "911a5d76-4e1e-4a0a-8fde-e845de12a839"
+  },
+  {
+    "Code": "388",
+    "Description": "Other specified septicemias",
+    "id": "f4b07402-b2ba-4346-ad73-801ac8ca084e"
+  },
+  {
+    "Code": "386",
+    "Description": "Ménière's disease, unspecified",
+    "id": "d82993fb-b80d-47ba-babf-2185d403038f"
+  },
+  {
+    "Code": "384",
+    "Description": "Acute myringitis, unspecified",
+    "id": "559ed77b-2ac3-47e1-88aa-f23f0f5a324b"
+  },
+  {
+    "Code": "383",
+    "Description": "Septicemia due to anaerobes",
+    "id": "40b9108f-e0ac-404e-8ecf-0d4f1d36764c"
+  },
+  {
+    "Code": "382",
+    "Description": "Pneumococcal septicemia [Streptococcus pneumoniae septicemia]",
+    "id": "cae07644-448f-47f4-9a66-31656b723ed4"
+  },
+  {
+    "Code": "381",
+    "Description": "Acute nonsuppurative otitis media, unspecified",
+    "id": "e9a1eb63-6d84-4bd7-a984-1f63f8148c54"
+  },
+  {
+    "Code": "380",
+    "Description": "Streptococcal septicemia",
+    "id": "20211f22-6bff-4b24-8e88-4bf4d0787225"
+  },
+  {
+    "Code": "38",
+    "Description": "Other specified salmonella infections",
+    "id": "51c656b4-97eb-4914-b130-dcac848d8c5b"
+  },
+  {
+    "Code": "379",
+    "Description": "Scleritis, unspecified",
+    "id": "4eba6bd2-6bd5-4b84-b720-b1a158c0ea25"
+  },
+  {
+    "Code": "378",
+    "Description": "Esotropia, unspecified",
+    "id": "1833e3a6-c357-4237-b24c-f5741f7df1cb"
+  },
+  {
+    "Code": "377",
+    "Description": "Papilledema, unspecified",
+    "id": "ed1f5a80-0d96-4b3a-82cc-2e49a5e1eccd"
+  },
+  {
+    "Code": "376",
+    "Description": "Acute inflammation of orbit, unspecified",
+    "id": "fa745a80-6533-4aa7-8b0d-1168958f9732"
+  },
+  {
+    "Code": "372",
+    "Description": "Acute conjunctivitis, unspecified",
+    "id": "084ef727-9c7a-4167-b3c6-dff2d71e8f9d"
+  },
+  {
+    "Code": "370",
+    "Description": "Corneal ulcer, unspecified",
+    "id": "ddfe0cfa-9dac-4a18-869e-f538ca32f1ca"
+  },
+  {
+    "Code": "369",
+    "Description": "Meningococcal infection, unspecified",
+    "id": "f6fb7458-1381-4eee-8090-2a136a8021aa"
+  },
+  {
+    "Code": "368",
+    "Description": "Amblyopia, unspecified",
+    "id": "f6d4f47c-8f55-4665-9ea1-dd97a8d0754f"
+  },
+  {
+    "Code": "365",
+    "Description": "Preglaucoma, unspecified",
+    "id": "f57b79aa-fa51-445e-80c0-f2bab237ba98"
+  },
+  {
+    "Code": "364",
+    "Description": "Acute and subacute iridocyclitis, unspecified",
+    "id": "8f8740ba-2692-475b-b781-c009e3a30560"
+  },
+  {
+    "Code": "362",
+    "Description": "Meningococcemia",
+    "id": "98e2180a-31ff-4b44-937e-ad5572755367"
+  },
+  {
+    "Code": "360",
+    "Description": "Meningococcal meningitis",
+    "id": "9d18757d-f14b-4b7b-974c-1e8c48e82194"
+  },
+  {
+    "Code": "359",
+    "Description": "Congenital hereditary muscular dystrophy",
+    "id": "b833f072-ea43-45ca-941d-1d95c5c478b3"
+  },
+  {
+    "Code": "358",
+    "Description": "Myasthenia gravis without (acute) exacerbation",
+    "id": "a2be19ff-ae44-458f-a058-6e3479de3a60"
+  },
+  {
+    "Code": "357",
+    "Description": "Acute infective polyneuritis",
+    "id": "5b2eb0b9-5828-465c-a73e-20702c94567d"
+  },
+  {
+    "Code": "356",
+    "Description": "Hereditary peripheral neuropathy",
+    "id": "c7884df3-49df-4115-95c8-d4d4fad142f6"
+  },
+  {
+    "Code": "355",
+    "Description": "Lesion of sciatic nerve",
+    "id": "dc3c0d8a-1aa9-4304-8b07-bfd63c4dc95a"
+  },
+  {
+    "Code": "354",
+    "Description": "Carpal tunnel syndrome",
+    "id": "68d531b6-a3a4-4ee9-966a-39d1d0bf2dfe"
+  },
+  {
+    "Code": "353",
+    "Description": "Brachial plexus lesions",
+    "id": "5450ef4f-7ebd-4186-a263-105d64736087"
+  },
+  {
+    "Code": "352",
+    "Description": "Disorders of olfactory (1st) nerve",
+    "id": "31536660-da0d-411f-a42b-c0333952506c"
+  },
+  {
+    "Code": "351",
+    "Description": "Bell's palsy",
+    "id": "d771a1ba-5669-4b57-ad1c-8db91d6b9a86"
+  },
+  {
+    "Code": "350",
+    "Description": "Trigeminal neuralgia",
+    "id": "33b2926f-8a32-435e-8f10-4e9710f178e4"
+  },
+  {
+    "Code": "35",
+    "Description": "Erysipelas",
+    "id": "2f6bac3a-f0c1-416d-a7b7-2e539e459ebb"
+  },
+  {
+    "Code": "349",
+    "Description": "Reaction to spinal or lumbar puncture",
+    "id": "54a6ec14-9cb0-4f5b-9c31-292d66514a3b"
+  },
+  {
+    "Code": "348",
+    "Description": "Cerebral cysts",
+    "id": "5ec2cd83-e71c-4b94-ac40-2a37415abfc5"
+  },
+  {
+    "Code": "346",
+    "Description": "Migraine with aura, without mention of intractable migraine without mention of status migrainosus",
+    "id": "a568a8ba-36bc-4ff3-b373-297458eb1665"
+  },
+  {
+    "Code": "345",
+    "Description": "Generalized nonconvulsive epilepsy, without mention of intractable epilepsy",
+    "id": "76531e05-d2f3-465e-a53c-19872408f36c"
+  },
+  {
+    "Code": "344",
+    "Description": "Quadriplegia, unspecified",
+    "id": "78f89baa-f15f-4995-b09b-f0cf72d6a513"
+  },
+  {
+    "Code": "343",
+    "Description": "Congenital diplegia",
+    "id": "9fd590b6-2563-4fe3-af29-97c92d41fd6b"
+  },
+  {
+    "Code": "342",
+    "Description": "Flaccid hemiplegia and hemiparesis affecting unspecified side",
+    "id": "601ee8d3-1665-4428-b93a-377c3e89dc39"
+  },
+  {
+    "Code": "340",
+    "Description": "Multiple sclerosis",
+    "id": "638e8548-0432-4c75-baad-a1f5fbec0cee"
+  },
+  {
+    "Code": "34",
+    "Description": "Multiple sclerosis",
+    "id": "e1c75c6f-9144-4159-97ff-14e930db0d5e"
+  },
+  {
+    "Code": "338",
+    "Description": "Whooping cough due to other specified organism",
+    "id": "dde05baf-2497-448e-b947-485d66177111"
+  },
+  {
+    "Code": "337",
+    "Description": "Idiopathic peripheral autonomic neuropathy, unspecified",
+    "id": "2983c72a-4720-4e54-b7d9-b6addf5b4c77"
+  },
+  {
+    "Code": "336",
+    "Description": "Syringomyelia and syringobulbia",
+    "id": "e7ac0059-5ba0-45ae-8fed-2f945753b25a"
+  },
+  {
+    "Code": "335",
+    "Description": "Werdnig-Hoffmann disease",
+    "id": "370799cc-e8d1-4d1a-8c68-f38c67d772d5"
+  },
+  {
+    "Code": "334",
+    "Description": "Friedreich's ataxia",
+    "id": "cccab9a1-cb10-4e71-9a3e-af4931e1d8eb"
+  },
+  {
+    "Code": "333",
+    "Description": "Other degenerative diseases of the basal ganglia",
+    "id": "94852894-8a58-435c-aad9-8e0f67cb96f9"
+  },
+  {
+    "Code": "332",
+    "Description": "Paralysis agitans",
+    "id": "8e2e0e20-6841-4ce0-8c6c-dd0f04702716"
+  },
+  {
+    "Code": "331",
+    "Description": "Whooping cough due to bordetella parapertussis [B. parapertussis]",
+    "id": "76bde6ce-f7e5-4384-bc34-79c91734ef8d"
+  },
+  {
+    "Code": "327",
+    "Description": "Organic insomnia, unspecified",
+    "id": "8bac9a1e-e96e-468c-b285-93dd949072db"
+  },
+  {
+    "Code": "323",
+    "Description": "Salmonella arthritis",
+    "id": "5bc21cb9-4724-4f19-b5aa-45979fec7641"
+  },
+  {
+    "Code": "322",
+    "Description": "Salmonella pneumonia",
+    "id": "8591fed9-a2d3-42ab-b162-aee797240c4d"
+  },
+  {
+    "Code": "319",
+    "Description": "Unspecified intellectual disabilities",
+    "id": "88219388-3003-472c-a997-8ebdde002c06"
+  },
+  {
+    "Code": "318",
+    "Description": "Other specified mycobacterial diseases",
+    "id": "6b882fe6-f368-4e86-919a-cbd09a37e8af"
+  },
+  {
+    "Code": "317",
+    "Description": "Mild intellectual disabilities",
+    "id": "03518f1e-0579-4a89-bc5a-c482f1e7b101"
+  },
+  {
+    "Code": "314",
+    "Description": "Attention deficit disorder without mention of hyperactivity",
+    "id": "5a6a6a01-b6f6-4f93-a6cb-ceab2c219968"
+  },
+  {
+    "Code": "312",
+    "Description": "Disseminated due to other mycobacteria",
+    "id": "9e6bcf65-f1b3-4c5c-813c-b96d2f400dda"
+  },
+  {
+    "Code": "311",
+    "Description": "Depressive disorder, not elsewhere classified",
+    "id": "10889801-3221-415b-850a-572c9661412f"
+  },
+  {
+    "Code": "310",
+    "Description": "Pulmonary diseases due to other mycobacteria",
+    "id": "152ce712-6571-422d-a9e0-c7b806120296"
+  },
+  {
+    "Code": "309",
+    "Description": "Leprosy, unspecified",
+    "id": "afa26cb9-f260-4a90-89f0-a87a554d5bbd"
+  },
+  {
+    "Code": "308",
+    "Description": "Other specified leprosy",
+    "id": "7fd34f5b-a08e-4b75-b05f-64fd1ffc8b4a"
+  },
+  {
+    "Code": "307",
+    "Description": "Adult onset fluency disorder",
+    "id": "c320f77e-ac74-4718-86e9-e2bb6c295ee7"
+  },
+  {
+    "Code": "306",
+    "Description": "Musculoskeletal malfunction arising from mental factors",
+    "id": "c6bb02ef-d455-45f1-b4db-ada03320983e"
+  },
+  {
+    "Code": "305",
+    "Description": "Alcohol abuse, unspecified",
+    "id": "436780fc-606f-4340-a79d-38647291c45d"
+  },
+  {
+    "Code": "304",
+    "Description": "Opioid type dependence, unspecified",
+    "id": "1906b962-716a-4569-baf7-fc8c4036262d"
+  },
+  {
+    "Code": "303",
+    "Description": "Borderline leprosy [group B]",
+    "id": "795f15d3-1ba6-44ed-b634-1304359bebc0"
+  },
+  {
+    "Code": "301",
+    "Description": "Tuberculoid leprosy [type T]",
+    "id": "7ca803b5-6489-4e67-910c-8cc38c3913e4"
+  },
+  {
+    "Code": "300",
+    "Description": "Lepromatous leprosy [type L]",
+    "id": "e0458db1-5ed3-4866-8d9d-d8e1571a2dd9"
+  },
+  {
+    "Code": "3",
+    "Description": "Anxiety state, unspecified",
+    "id": "b2a46375-0dec-4031-be69-f0473097537f"
+  },
+  {
+    "Code": "299",
+    "Description": "Autistic disorder, current or active state",
+    "id": "439e14e9-4b50-4d62-84ff-43d49f60bc75"
+  },
+  {
+    "Code": "298",
+    "Description": "Depressive type psychosis",
+    "id": "805594be-e401-4d1e-a571-126320bcb2cc"
+  },
+  {
+    "Code": "297",
+    "Description": "Paranoid state, simple",
+    "id": "c2a28087-4ca6-44e8-a47a-9e3106672b3f"
+  },
+  {
+    "Code": "296",
+    "Description": "Bipolar I disorder, single manic episode, unspecified",
+    "id": "e74dd1e3-250a-487f-a6bd-9d01bbb66b4a"
+  },
+  {
+    "Code": "295",
+    "Description": "Simple type schizophrenia, unspecified",
+    "id": "aa121347-94e7-4d5d-9499-280aab6154e7"
+  },
+  {
+    "Code": "294",
+    "Description": "Amnestic disorder in conditions classified elsewhere",
+    "id": "cf56d8a2-ee82-4d83-b38c-1e15ba1a7dc1"
+  },
+  {
+    "Code": "293",
+    "Description": "Delirium due to conditions classified elsewhere",
+    "id": "8f7c3df5-efe3-44d9-8d5a-aed38baaa21b"
+  },
+  {
+    "Code": "292",
+    "Description": "Drug withdrawal",
+    "id": "cdeb5130-053c-483f-9ca2-d15e09237f9c"
+  },
+  {
+    "Code": "291",
+    "Description": "Alcohol withdrawal delirium",
+    "id": "f5dda0b6-9ef4-43f9-bdce-f350997ba1ed"
+  },
+  {
+    "Code": "290",
+    "Description": "Senile dementia, uncomplicated",
+    "id": "7b26aa16-e7f6-4306-b3ec-0c0bc2a67dde"
+  },
+  {
+    "Code": "289",
+    "Description": "Polycythemia, secondary",
+    "id": "b293e9b0-7687-45ee-b54d-45ce4e1569d6"
+  },
+  {
+    "Code": "288",
+    "Description": "Neutropenia, unspecified",
+    "id": "da63fd9b-ddab-497b-9298-3bd7bd6cd708"
+  },
+  {
+    "Code": "287",
+    "Description": "Allergic purpura",
+    "id": "85be4f6c-7b24-4c91-b75a-ea168fab7977"
+  },
+  {
+    "Code": "286",
+    "Description": "Congenital factor VIII disorder",
+    "id": "b683caee-0639-48d0-b383-9c6aa7399c84"
+  },
+  {
+    "Code": "285",
+    "Description": "Sideroblastic anemia",
+    "id": "179d63a9-6ab3-4515-90be-248ccbbc895e"
+  },
+  {
+    "Code": "284",
+    "Description": "Constitutional red blood cell aplasia",
+    "id": "43cfb0ba-b996-47eb-b0d4-fe1062344be9"
+  },
+  {
+    "Code": "283",
+    "Description": "Autoimmune hemolytic anemias",
+    "id": "55743c61-2f78-4421-8f97-b8f4289793f1"
+  },
+  {
+    "Code": "282",
+    "Description": "Hereditary spherocytosis",
+    "id": "b515a765-927b-44eb-b548-3376b0b2ec84"
+  },
+  {
+    "Code": "281",
+    "Description": "Pernicious anemia",
+    "id": "ffc00193-6f8f-445f-abfc-e7f4e69a7eb1"
+  },
+  {
+    "Code": "280",
+    "Description": "Iron deficiency anemia secondary to blood loss (chronic)",
+    "id": "6115aaab-24a5-464b-a32c-2f8d2b8920c0"
+  },
+  {
+    "Code": "279",
+    "Description": "Unspecified zoonotic bacterial disease",
+    "id": "4aa9b786-9f27-4e58-acb7-fd9516c9904d"
+  },
+  {
+    "Code": "278",
+    "Description": "Other specified zoonotic bacterial diseases",
+    "id": "a3e327dd-07b6-471b-a489-c55dad9e9d1b"
+  },
+  {
+    "Code": "277",
+    "Description": "Cystic fibrosis without mention of meconium ileus",
+    "id": "560e0f2e-9796-4120-a064-a987f8620cbb"
+  },
+  {
+    "Code": "276",
+    "Description": "Hyperosmolality and/or hypernatremia",
+    "id": "f047c060-cf15-497b-b5b6-d585bd478216"
+  },
+  {
+    "Code": "275",
+    "Description": "Disorders of copper metabolism",
+    "id": "5070840b-ccd5-4dcd-b271-6c7a5ac3f658"
+  },
+  {
+    "Code": "274",
+    "Description": "Gouty arthropathy, unspecified",
+    "id": "dd1c7c50-e6bc-4c70-af40-51977807bb2c"
+  },
+  {
+    "Code": "273",
+    "Description": "Polyclonal hypergammaglobulinemia",
+    "id": "4858d328-2284-4d49-b526-f6d14785aac7"
+  },
+  {
+    "Code": "272",
+    "Description": "Pasteurellosis",
+    "id": "372a02fb-dcc7-4a23-b873-ed2a49e48a5b"
+  },
+  {
+    "Code": "271",
+    "Description": "Erysipelothrix infection",
+    "id": "0368ed05-d207-47ab-9b82-33ed4d1bc71e"
+  },
+  {
+    "Code": "270",
+    "Description": "Listeriosis",
+    "id": "4ae62359-0288-48b5-b0e7-afa7b9f8f9cb"
+  },
+  {
+    "Code": "27",
+    "Description": "Disturbances of amino-acid transport",
+    "id": "7ce87036-9b24-47d5-b6cd-772e4c5ceb92"
+  },
+  {
+    "Code": "269",
+    "Description": "Unspecified rat-bite fever",
+    "id": "d90f08ee-c97a-446e-84f7-327ed8e841a0"
+  },
+  {
+    "Code": "268",
+    "Description": "Rickets, active",
+    "id": "00cd6b44-069d-4d4e-8d6a-18db44675fe9"
+  },
+  {
+    "Code": "266",
+    "Description": "Ariboflavinosis",
+    "id": "1ec8e16e-c9d9-491b-b66f-e0fe7bbbbf8a"
+  },
+  {
+    "Code": "263",
+    "Description": "Malnutrition of moderate degree",
+    "id": "c9f1968b-da2a-4416-9e71-36667410e9a7"
+  },
+  {
+    "Code": "262",
+    "Description": "Other severe protein-calorie malnutrition",
+    "id": "8488eca6-927c-4692-84ac-1a3f7f0203fe"
+  },
+  {
+    "Code": "261",
+    "Description": "Nutritional marasmus",
+    "id": "f2577209-9236-4bc4-9f8b-44608d4ed97d"
+  },
+  {
+    "Code": "260",
+    "Description": "Kwashiorkor",
+    "id": "3d72a675-7a22-4951-b5b5-f80988b20e36"
+  },
+  {
+    "Code": "258",
+    "Description": "Other combinations of endocrine dysfunction",
+    "id": "141f74dc-5d99-4022-9f03-e4f526900c2b"
+  },
+  {
+    "Code": "256",
+    "Description": "Hyperestrogenism",
+    "id": "a913a0ed-b8dc-4d82-8f4b-d0e6491e34ca"
+  },
+  {
+    "Code": "255",
+    "Description": "Cushing's syndrome",
+    "id": "bd2addc7-646b-4ed7-8f2a-9bcef82ba81f"
+  },
+  {
+    "Code": "253",
+    "Description": "Acromegaly and gigantism",
+    "id": "801f5824-ebf4-40c0-a9a8-a2b32518cdb9"
+  },
+  {
+    "Code": "252",
+    "Description": "Hyperparathyroidism, unspecified",
+    "id": "c1c8c922-2c4a-4746-95c8-f11979b77c2c"
+  },
+  {
+    "Code": "251",
+    "Description": "Hypoglycemic coma",
+    "id": "31200be6-628e-43b7-91bb-1a9382b0e243"
+  },
+  {
+    "Code": "250.93",
+    "Description": "Diabetes with unspecified complication, type I [juvenile type], uncontrolled",
+    "id": "1d942f5e-a43e-4f75-8521-d50945f77367"
+  },
+  {
+    "Code": "250.92",
+    "Description": "Diabetes with unspecified complication, type II or unspecified type, uncontrolled",
+    "id": "db30760d-5c50-4d08-9646-ba3cbc6aadd3"
+  },
+  {
+    "Code": "250.91",
+    "Description": "Diabetes with unspecified complication, type I [juvenile type], not stated as uncontrolled",
+    "id": "ef35f84a-8b76-4ea9-9aa6-f2a0f3f76155"
+  },
+  {
+    "Code": "250.9",
+    "Description": "Diabetes with unspecified complication, type II or unspecified type, not stated as uncontrolled",
+    "id": "92bb5a3a-92eb-4239-9a50-1d96da50c72f"
+  },
+  {
+    "Code": "250.83",
+    "Description": "Diabetes with other specified manifestations, type I [juvenile type], uncontrolled",
+    "id": "40d1749a-4199-45cd-8b38-342651a4e268"
+  },
+  {
+    "Code": "250.82",
+    "Description": "Diabetes with other specified manifestations, type II or unspecified type, uncontrolled",
+    "id": "1e5c7221-da58-4225-a3c8-59a89edbad91"
+  },
+  {
+    "Code": "250.81",
+    "Description": "Diabetes with other specified manifestations, type I [juvenile type], not stated as uncontrolled",
+    "id": "bf016719-81be-4f14-a089-429b99c092d0"
+  },
+  {
+    "Code": "250.8",
+    "Description": "Diabetes with other specified manifestations, type II or unspecified type, not stated as uncontrolled",
+    "id": "8b90bfa7-e151-454c-9bc4-05b08f8d2b58"
+  },
+  {
+    "Code": "250.7",
+    "Description": "Diabetes with peripheral circulatory disorders, type II or unspecified type, not stated as uncontrolled",
+    "id": "622bda7a-59e0-4c7b-bc97-c29dc8ea6a7c"
+  },
+  {
+    "Code": "250.6",
+    "Description": "Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled",
+    "id": "92a0f108-d2d1-4b4a-baaa-605579135372"
+  },
+  {
+    "Code": "250.53",
+    "Description": "Diabetes with ophthalmic manifestations, type I [juvenile type], uncontrolled",
+    "id": "540e1a1c-b002-4f88-8441-d34ca78c55f7"
+  },
+  {
+    "Code": "250.52",
+    "Description": "Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled",
+    "id": "3f272bce-91a3-4116-b870-023b0d426493"
+  },
+  {
+    "Code": "250.51",
+    "Description": "Diabetes with ophthalmic manifestations, type I [juvenile type], not stated as uncontrolled",
+    "id": "2ff6ccbf-99ff-4105-859d-49aef22d5791"
+  },
+  {
+    "Code": "250.5",
+    "Description": "Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled",
+    "id": "d4293547-19c8-48dc-a407-0ef30bcd84c7"
+  },
+  {
+    "Code": "250.43",
+    "Description": "Diabetes with renal manifestations, type I [juvenile type], uncontrolled",
+    "id": "53770256-af70-409b-85b3-4f9b53c575c1"
+  },
+  {
+    "Code": "250.42",
+    "Description": "Diabetes with renal manifestations, type II or unspecified type, uncontrolled",
+    "id": "a01baa4a-0da2-4e4b-a422-7600e4cd69ff"
+  },
+  {
+    "Code": "250.41",
+    "Description": "Diabetes with renal manifestations, type I [juvenile type], not stated as uncontrolled",
+    "id": "0d3962d3-de55-49be-8d3e-fcd0ed74312c"
+  },
+  {
+    "Code": "250.4",
+    "Description": "Diabetes with renal manifestations, type II or unspecified type, not stated as uncontrolled",
+    "id": "a75a808c-cff4-4225-aa94-0b9b240893a1"
+  },
+  {
+    "Code": "250.33",
+    "Description": "Diabetes with other coma, type I [juvenile type], uncontrolled",
+    "id": "f7e1d4cf-3309-4d51-bcce-ab2bab77bfa6"
+  },
+  {
+    "Code": "250.32",
+    "Description": "Diabetes with other coma, type II or unspecified type, uncontrolled",
+    "id": "67a2376d-89ce-4036-b612-a43cee8d62f3"
+  },
+  {
+    "Code": "250.31",
+    "Description": "Diabetes with other coma, type I [juvenile type], not stated as uncontrolled",
+    "id": "3ea73aa1-0221-4798-b61b-72be51c46d97"
+  },
+  {
+    "Code": "250.3",
+    "Description": "Diabetes with other coma, type II or unspecified type, not stated as uncontrolled",
+    "id": "1cb253bf-3954-4c36-86df-91a79a87e1ce"
+  },
+  {
+    "Code": "250.22",
+    "Description": "Diabetes with hyperosmolarity, type II or unspecified type, uncontrolled",
+    "id": "b03f56ff-c547-4eb0-9cc1-206a1c498693"
+  },
+  {
+    "Code": "250.21",
+    "Description": "Diabetes with hyperosmolarity, type I [juvenile type], not stated as uncontrolled",
+    "id": "28538362-ac03-44af-be55-0dfe0ff95595"
+  },
+  {
+    "Code": "250.2",
+    "Description": "Diabetes with hyperosmolarity, type II or unspecified type, not stated as uncontrolled",
+    "id": "f2948f06-2058-448c-8d50-6095048b95bb"
+  },
+  {
+    "Code": "250.13",
+    "Description": "Diabetes with ketoacidosis, type I [juvenile type], uncontrolled",
+    "id": "94c5b31e-b0b7-44cb-ad8a-da9eea077353"
+  },
+  {
+    "Code": "250.12",
+    "Description": "Diabetes with ketoacidosis, type II or unspecified type, uncontrolled",
+    "id": "a105b403-9f58-45b7-8799-13d6a02e72b4"
+  },
+  {
+    "Code": "250.11",
+    "Description": "Diabetes with ketoacidosis, type I [juvenile type], not stated as uncontrolled",
+    "id": "155db5f6-785b-4aaf-b6ff-ce58dd792c12"
+  },
+  {
+    "Code": "250.1",
+    "Description": "Diabetes with ketoacidosis, type II or unspecified type, not stated as uncontrolled",
+    "id": "ed402589-8110-4ed2-9012-dfe09663fef5"
+  },
+  {
+    "Code": "250.03",
+    "Description": "Diabetes mellitus without mention of complication, type I [juvenile type], uncontrolled",
+    "id": "b8e077be-b2c8-41fd-b10c-09957427acc7"
+  },
+  {
+    "Code": "250.02",
+    "Description": "Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled",
+    "id": "1747da41-265b-4021-885c-9cc130e7df58"
+  },
+  {
+    "Code": "250.01",
+    "Description": "Diabetes mellitus without mention of complication, type I [juvenile type], not stated as uncontrolled",
+    "id": "128a45a8-9892-401e-979a-80266f4bb496"
+  },
+  {
+    "Code": "250",
+    "Description": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
+    "id": "57f1a73c-15bc-4022-9c8e-56d1b7183eb4"
+  },
+  {
+    "Code": "246",
+    "Description": "Disorders of thyrocalcitonin secretion",
+    "id": "bf42f035-619d-4138-b80d-2c367abe7693"
+  },
+  {
+    "Code": "245",
+    "Description": "Acute thyroiditis",
+    "id": "7edb636f-47ad-49b2-a54d-3864da4f150f"
+  },
+  {
+    "Code": "244",
+    "Description": "Postsurgical hypothyroidism",
+    "id": "55b1b9c7-b40a-4bd3-be7e-0856a379097e"
+  },
+  {
+    "Code": "242",
+    "Description": "Toxic diffuse goiter without mention of thyrotoxic crisis or storm",
+    "id": "ecc27b52-6c24-4336-838a-10e23aeac742"
+  },
+  {
+    "Code": "241",
+    "Description": "Nontoxic uninodular goiter",
+    "id": "f61d265f-5fe7-4f79-a21d-36381ac9a664"
+  },
+  {
+    "Code": "240",
+    "Description": "Goiter, specified as simple",
+    "id": "d5e03bca-fc47-4e0f-9a19-5cb744f41d5a"
+  },
+  {
+    "Code": "239",
+    "Description": "Brucellosis, unspecified",
+    "id": "bb062381-e1f9-4afc-8c2f-048d95c0d35a"
+  },
+  {
+    "Code": "238",
+    "Description": "Other brucellosis",
+    "id": "47587924-f6f6-40ea-95ca-13a881b39d96"
+  },
+  {
+    "Code": "237",
+    "Description": "Neoplasm of uncertain behavior of pituitary gland and craniopharyngeal duct",
+    "id": "442a000b-eb81-4d7e-87b4-11b1cb1b7f66"
+  },
+  {
+    "Code": "236",
+    "Description": "Neoplasm of uncertain behavior of uterus",
+    "id": "2d3edfb4-2061-4e92-a692-4d1209117e94"
+  },
+  {
+    "Code": "235",
+    "Description": "Neoplasm of uncertain behavior of major salivary glands",
+    "id": "62a27281-6011-4b7d-aa83-9c94052c4e2b"
+  },
+  {
+    "Code": "233",
+    "Description": "Brucella canis",
+    "id": "fdaa3a3c-b446-4e64-b669-64b8c18ffec3"
+  },
+  {
+    "Code": "230",
+    "Description": "Brucella melitensis",
+    "id": "b7b760eb-ae8b-4f62-9b92-b9cdac6d36a8"
+  },
+  {
+    "Code": "23",
+    "Description": "Paratyphoid fever C",
+    "id": "2bfd7b6f-347d-4172-afac-bc3873c0c306"
+  },
+  {
+    "Code": "229",
+    "Description": "Anthrax, unspecified",
+    "id": "6f235963-82db-45b7-a9da-1116cd3655e4"
+  },
+  {
+    "Code": "228",
+    "Description": "Other specified manifestations of anthrax",
+    "id": "29a44246-35de-4a4a-9b8a-68e50bd8c173"
+  },
+  {
+    "Code": "227",
+    "Description": "Benign neoplasm of adrenal gland",
+    "id": "f0d54d17-66cb-4d3c-bbf8-911df24e816b"
+  },
+  {
+    "Code": "226",
+    "Description": "Benign neoplasm of thyroid glands",
+    "id": "7b9258e6-4e60-49cc-8a48-9a90ecdb0a5c"
+  },
+  {
+    "Code": "225",
+    "Description": "Benign neoplasm of brain",
+    "id": "2f51cdf7-86c4-424f-b360-7a4030933568"
+  },
+  {
+    "Code": "223",
+    "Description": "Anthrax septicemia",
+    "id": "c3d3fc12-b2a6-4ffa-9eda-a7144c561ae4"
+  },
+  {
+    "Code": "220",
+    "Description": "Benign neoplasm of ovary",
+    "id": "c6a1ca60-2ab3-4af6-8a19-d6c21af24d29"
+  },
+  {
+    "Code": "218",
+    "Description": "Other specified tularemia",
+    "id": "ad0191e0-9cbf-4f34-8ecc-4476999d095a"
+  },
+  {
+    "Code": "217",
+    "Description": "Benign neoplasm of breast",
+    "id": "c152c87d-c33b-4075-a53d-1e01cc560e00"
+  },
+  {
+    "Code": "215",
+    "Description": "Other benign neoplasm of connective and other soft tissue of head, face, and neck",
+    "id": "20bf29e6-6a4a-49b1-96c9-d6992e8d57c7"
+  },
+  {
+    "Code": "214",
+    "Description": "Lipoma of skin and subcutaneous tissue of face",
+    "id": "9999055f-ba73-4d92-aabc-954cee817eed"
+  },
+  {
+    "Code": "212",
+    "Description": "Pulmonary tularemia",
+    "id": "0f9f5499-0082-4e6a-a396-165306949b61"
+  },
+  {
+    "Code": "211",
+    "Description": "Enteric tularemia",
+    "id": "1e386fb1-8470-47d4-b165-1d164bfdc2ac"
+  },
+  {
+    "Code": "210",
+    "Description": "Ulceroglandular tularemia",
+    "id": "08999b07-47c3-40cd-a4a6-02de4e52ce45"
+  },
+  {
+    "Code": "208",
+    "Description": "Other specified types of plague",
+    "id": "85965ee8-4d72-4973-af5f-effe1315b3d8"
+  },
+  {
+    "Code": "205",
+    "Description": "Pneumonic plague, unspecified",
+    "id": "983e901a-2785-4b6f-bf5e-b4720eab5d3d"
+  },
+  {
+    "Code": "204",
+    "Description": "Secondary pneumonic plague",
+    "id": "3d3d0f74-ab18-4743-abc8-a69f3e325456"
+  },
+  {
+    "Code": "203",
+    "Description": "Primary pneumonic plague",
+    "id": "f9df5b93-00f5-4d8e-bb31-b2117934fa35"
+  },
+  {
+    "Code": "202",
+    "Description": "Septicemic plague",
+    "id": "d52aa0b1-5d25-4b8e-899a-28ebc9ededda"
+  },
+  {
+    "Code": "201",
+    "Description": "Cellulocutaneous plague",
+    "id": "32dc49b1-9277-4f87-9cbf-de678e3a21b2"
+  },
+  {
+    "Code": "200",
+    "Description": "Bubonic plague",
+    "id": "28af5aa6-7090-4b2c-ae0e-61bbad140cb2"
+  },
+  {
+    "Code": "199",
+    "Description": "Disseminated malignant neoplasm without specification of site",
+    "id": "14b89de3-a6be-4102-ba24-519d8f594a8e"
+  },
+  {
+    "Code": "198",
+    "Description": "Secondary malignant neoplasm of kidney",
+    "id": "406efffc-c3a5-4c33-82f3-dbf9bb8dbcc8"
+  },
+  {
+    "Code": "197",
+    "Description": "Secondary malignant neoplasm of lung",
+    "id": "637ac57d-6ea7-4bfa-ace2-f2a7f7ab0249"
+  },
+  {
+    "Code": "196",
+    "Description": "Secondary and unspecified malignant neoplasm of lymph nodes of head, face, and neck",
+    "id": "0fe0cf62-5ae9-4418-b6c5-24d54d8f69cb"
+  },
+  {
+    "Code": "195",
+    "Description": "Malignant neoplasm of head, face, and neck",
+    "id": "d36f26b4-a2ee-4755-84d7-817db3dc7d1e"
+  },
+  {
+    "Code": "193",
+    "Description": "Malignant neoplasm of thyroid gland",
+    "id": "56901b3e-aabe-48a2-a696-509038b2eb7a"
+  },
+  {
+    "Code": "192",
+    "Description": "Malignant neoplasm of cranial nerves",
+    "id": "f6861533-d56f-431f-afa8-6db922ae84fe"
+  },
+  {
+    "Code": "191",
+    "Description": "Malignant neoplasm of cerebrum, except lobes and ventricles",
+    "id": "4a779079-fdaf-4c78-83d4-3ba6792475fe"
+  },
+  {
+    "Code": "189",
+    "Description": "Malignant neoplasm of kidney, except pelvis",
+    "id": "09708833-e8f8-4fbb-9577-6bf32cb57c5d"
+  },
+  {
+    "Code": "188",
+    "Description": "Malignant neoplasm of trigone of urinary bladder",
+    "id": "eef0453c-02ee-48b0-b372-ca15ab07f488"
+  },
+  {
+    "Code": "185",
+    "Description": "Malignant neoplasm of prostate",
+    "id": "24e65283-a26d-4579-bff6-28b6720bf6d7"
+  },
+  {
+    "Code": "183",
+    "Description": "Malignant neoplasm of ovary",
+    "id": "f264f6d9-3914-432c-aef1-ca65c4f34c83"
+  },
+  {
+    "Code": "182",
+    "Description": "Malignant neoplasm of corpus uteri, except isthmus",
+    "id": "2d360a25-297e-4dbc-86b3-e57259ec7a53"
+  },
+  {
+    "Code": "180",
+    "Description": "Malignant neoplasm of endocervix",
+    "id": "ebfcf23f-1640-463b-8f8e-30a444955a80"
+  },
+  {
+    "Code": "179",
+    "Description": "Malignant neoplasm of uterus, part unspecified",
+    "id": "228127c5-fb11-4cfe-9377-7b1cab6cc386"
+  },
+  {
+    "Code": "175",
+    "Description": "Malignant neoplasm of nipple and areola of male breast",
+    "id": "143691b4-2bc6-46eb-b818-4df73713d0a0"
+  },
+  {
+    "Code": "174",
+    "Description": "Malignant neoplasm of nipple and areola of female breast",
+    "id": "152bd2f9-f271-4134-beba-f513495408fc"
+  },
+  {
+    "Code": "172",
+    "Description": "Malignant melanoma of skin of lip",
+    "id": "ef8eb1e6-d594-4d8d-babc-690718e7d69e"
+  },
+  {
+    "Code": "171",
+    "Description": "Malignant neoplasm of connective and other soft tissue of head, face, and neck",
+    "id": "cd6dee3e-c663-45ce-b4b3-8e0f5d641dee"
+  },
+  {
+    "Code": "163",
+    "Description": "Malignant neoplasm of parietal pleura",
+    "id": "2b82c072-b160-43ad-b557-6d73ea707bea"
+  },
+  {
+    "Code": "162",
+    "Description": "Malignant neoplasm of trachea",
+    "id": "6a448c60-d53a-4b08-9ab4-0dc37015bbd5"
+  },
+  {
+    "Code": "161",
+    "Description": "Malignant neoplasm of glottis",
+    "id": "77be1287-529a-4d5b-83c6-b06f12bb5386"
+  },
+  {
+    "Code": "158",
+    "Description": "Malignant neoplasm of retroperitoneum",
+    "id": "29a316e6-c88e-4adf-b76e-7830bf12167f"
+  },
+  {
+    "Code": "157",
+    "Description": "Malignant neoplasm of head of pancreas",
+    "id": "1ce6edf9-9f3a-4267-b759-e8d5f74fc6ea"
+  },
+  {
+    "Code": "156",
+    "Description": "Malignant neoplasm of gallbladder",
+    "id": "271f1db2-7d59-4b6a-bd0b-b881568a0210"
+  },
+  {
+    "Code": "155",
+    "Description": "Malignant neoplasm of liver, primary",
+    "id": "f1c4f922-268d-4bfc-9803-f0d7945bf987"
+  },
+  {
+    "Code": "154",
+    "Description": "Malignant neoplasm of rectosigmoid junction",
+    "id": "0fd5d750-8976-4967-ba5e-b33345937d2a"
+  },
+  {
+    "Code": "153",
+    "Description": "Malignant neoplasm of hepatic flexure",
+    "id": "fb8454b0-db38-4f41-a4c7-e8dc6b565925"
+  },
+  {
+    "Code": "152",
+    "Description": "Malignant neoplasm of duodenum",
+    "id": "cfe64e9d-49d8-4deb-91a7-af4ad8066876"
+  },
+  {
+    "Code": "151",
+    "Description": "Malignant neoplasm of cardia",
+    "id": "028d8107-8d8f-4a2f-b1ce-5788619f4659"
+  },
+  {
+    "Code": "150",
+    "Description": "Malignant neoplasm of cervical esophagus",
+    "id": "704e33c1-ab6f-4088-9878-dc9093f7fc0b"
+  },
+  {
+    "Code": "149",
+    "Description": "Malignant neoplasm of pharynx, unspecified",
+    "id": "9937750c-1062-45b8-a8fe-de944d7c7f9d"
+  },
+  {
+    "Code": "147",
+    "Description": "Malignant neoplasm of superior wall of nasopharynx",
+    "id": "d5031ec6-e76a-499a-b187-b71622056612"
+  },
+  {
+    "Code": "141",
+    "Description": "Malignant neoplasm of base of tongue",
+    "id": "15b4a15b-02e7-4ec3-9ee1-2151194fd8a7"
+  },
+  {
+    "Code": "140",
+    "Description": "Malignant neoplasm of upper lip, vermilion border",
+    "id": "3ce50f7c-86a8-4877-b1b2-65e53cbad826"
+  },
+  {
+    "Code": "14",
+    "Description": "Malignant neoplasm of upper lip, vermilion border",
+    "id": "f2429866-3ee9-4a8f-8169-9b0fc8cba6f7"
+  },
+  {
+    "Code": "138",
+    "Description": "Late effects of acute poliomyelitis",
+    "id": "980ac33e-2688-4ec5-b422-d12d6f077ff5"
+  },
+  {
+    "Code": "136",
+    "Description": "Ainhum",
+    "id": "54d1c2bd-0fa6-465a-b039-e0e8430655bb"
+  },
+  {
+    "Code": "135",
+    "Description": "Sarcoidosis",
+    "id": "d8b26bcc-800c-4e1f-b231-029e2c02f461"
+  },
+  {
+    "Code": "133",
+    "Description": "Scabies",
+    "id": "ac7adb75-7ad7-44c5-9731-d2f56c21042c"
+  },
+  {
+    "Code": "?",
+    "Description": "N/A",
+    "id": "9f55a565-8b10-4c88-85e8-be6831038483"
+  },
+  {
+    "Code": "V57",
+    "Description": "Care involving breathing exercises",
+    "id": "d231def3-7883-40d7-a55d-3a42b36cb2d9"
+  },
+  {
+    "Code": "V56",
+    "Description": "Encounter for extracorporeal dialysis",
+    "id": "91d79c0b-40fb-4931-a05c-333e7754028c"
+  },
+  {
+    "Code": "V55",
+    "Description": "Attention to tracheostomy",
+    "id": "1465b60f-5f10-4952-aeca-0eaa68746942"
+  },
+  {
+    "Code": "V54",
+    "Description": "Encounter for removal of internal fixation device",
+    "id": "4d34e13b-70bd-455d-a204-ce39b9befbb2"
+  },
+  {
+    "Code": "V53",
+    "Description": "Fitting and adjustment of spectacles and contact lenses",
+    "id": "ae13c80f-4500-4b70-a6c8-7f8af4c7a246"
+  },
+  {
+    "Code": "V51",
+    "Description": "Encounter for breast reconstruction following mastectomy",
+    "id": "486662a1-d7d2-4b85-97ce-649746b7d14b"
+  },
+  {
+    "Code": "V50",
+    "Description": "Elective hair transplant for purposes other than remedying health states",
+    "id": "99b9b2cc-f4d0-480d-9f72-c6f02d502299"
+  },
+  {
+    "Code": "V49",
+    "Description": "Deficiencies of limbs",
+    "id": "153cd75a-e930-4e01-977b-b2c54b042d26"
+  },
+  {
+    "Code": "V46",
+    "Description": "Dependence on aspirator",
+    "id": "875766f1-56bc-41a3-9c52-adfb852887a6"
+  },
+  {
+    "Code": "V45",
+    "Description": "Unspecified cardiac device in situ",
+    "id": "25cc7a5a-e4d5-4466-bda2-bae7d808aa27"
+  },
+  {
+    "Code": "V44",
+    "Description": "Tracheostomy status",
+    "id": "c8bc9611-1fb7-4016-8f9f-5c403f4c33ca"
+  },
+  {
+    "Code": "V43",
+    "Description": "Eye globe replaced by other means",
+    "id": "a89dc7a4-0027-4401-982d-b7390b11b291"
+  },
+  {
+    "Code": "V42",
+    "Description": "Kidney replaced by transplant",
+    "id": "a9acd575-f889-4fd5-8751-6d394c9a7aed"
+  },
+  {
+    "Code": "V27",
+    "Description": "Outcome of delivery, single liveborn",
+    "id": "06085a87-bc13-4205-b273-65863c6c4328"
+  },
+  {
+    "Code": "V25",
+    "Description": "General counseling on prescription of oral contraceptives",
+    "id": "a6e76769-dc5c-4905-88a1-1dbf42940c41"
+  },
+  {
+    "Code": "V18",
+    "Description": "Family history of diabetes mellitus",
+    "id": "ea26369d-0886-4888-aa36-8418cd3abe07"
+  },
+  {
+    "Code": "E955",
+    "Description": "Suicide and self-inflicted injury by handgun",
+    "id": "b2113c5e-206b-4026-b816-cbbfb90ebe7b"
+  },
+  {
+    "Code": "E950",
+    "Description": "Suicide and self-inflicted poisoning by analgesics, antipyretics, and antirheumatics",
+    "id": "375ea244-d940-4e57-bc89-ea623af1bb7f"
+  },
+  {
+    "Code": "E947",
+    "Description": "Dietetics causing adverse effects in therapeutic use",
+    "id": "07efc341-159e-450b-90c5-57d42c68e1ef"
+  },
+  {
+    "Code": "E946",
+    "Description": "Local anti-infectives and anti-inflammatory drugs causing adverse effects in therapeutic use",
+    "id": "71d659f1-df72-44bc-b4c1-d9e36f27d656"
+  },
+  {
+    "Code": "E945",
+    "Description": "Oxytocic agents causing adverse effects in therapeutic use",
+    "id": "bdb21805-ece7-4079-8691-4e4d92923ac2"
+  },
+  {
+    "Code": "E944",
+    "Description": "Mercurial diuretics causing adverse effects in therapeutic use",
+    "id": "86b22c34-36ce-4f04-a912-e0c2beefa993"
+  },
+  {
+    "Code": "E943",
+    "Description": "Antacids and antigastric secretion drugs causing adverse effects in therapeutic use",
+    "id": "204d97b3-dbab-4753-9d56-806786b73ffb"
+  },
+  {
+    "Code": "E942",
+    "Description": "Cardiac rhythm regulators causing adverse effects in therapeutic use",
+    "id": "a75756fc-3ee6-4430-a12c-6cf8f21b8852"
+  },
+  {
+    "Code": "E941",
+    "Description": "Parasympathomimetics [cholinergics] causing adverse effects in therapeutic use",
+    "id": "6e70e357-a87a-422f-972c-29afe17cd071"
+  },
+  {
+    "Code": "E939",
+    "Description": "Antidepressants causing adverse effects in therapeutic use",
+    "id": "4ae7128f-7fce-4c77-89d2-a7a76e92ef99"
+  },
+  {
+    "Code": "E938",
+    "Description": "Central nervous system muscle-tone depressants causing adverse effects in therapeutic use",
+    "id": "25b7e815-f97b-4406-86d2-c3a89216d1ea"
+  },
+  {
+    "Code": "E937",
+    "Description": "Barbiturates causing adverse effects in therapeutic use",
+    "id": "77d0cfc4-4048-46ca-9ecb-deb793111a3a"
+  },
+  {
+    "Code": "E936",
+    "Description": "Oxazolidine derivatives causing adverse effects in therapeutic use",
+    "id": "7c4fc591-9ea0-41e3-ae09-aa9ea8532e7c"
+  },
+  {
+    "Code": "E935",
+    "Description": "Heroin causing adverse effects in therapeutic use",
+    "id": "0b5ccff7-0dca-4e7e-bc62-cbb15decb373"
+  },
+  {
+    "Code": "E934",
+    "Description": "Iron and its compounds causing adverse effects in therapeutic use",
+    "id": "ad3d5ec8-b774-48f1-baf1-b2f4f484b1fb"
+  },
+  {
+    "Code": "E933",
+    "Description": "Antiallergic and antiemetic drugs causing adverse effects in therapeutic use",
+    "id": "5ca2458f-588f-4a13-98a2-abfbfcb910cd"
+  },
+  {
+    "Code": "E884",
+    "Description": "Accidental fall from playground equipment",
+    "id": "a9f6d1b9-307a-4aed-86cc-80d4fa797035"
+  },
+  {
+    "Code": "E883",
+    "Description": "Accident from diving or jumping into water [swimming pool]",
+    "id": "454746dd-d7e5-4a03-bbcc-11decbd8cf1f"
+  },
+  {
+    "Code": "E882",
+    "Description": "Accidental fall from or out of building or other structure",
+    "id": "168d03cd-3602-4e29-bad9-8b117e4289c6"
+  },
+  {
+    "Code": "E881",
+    "Description": "Accidental fall from ladder",
+    "id": "9a9ba0ac-09f9-4378-a751-bb55872ef6e3"
+  },
+  {
+    "Code": "E880",
+    "Description": "Accidental fall on or from escalator",
+    "id": "707b8195-7b69-4f39-be40-82e669cb2252"
+  },
+  {
+    "Code": "E879",
+    "Description": "Cardiac catheterization as the cause of abnormal reaction of patient, or of later complication, without mention of misadventure at time of procedure",
+    "id": "c2a18ed6-58db-4a59-85b5-4a09a08e9e94"
+  },
+  {
+    "Code": "E878",
+    "Description": "Surgical operation with transplant of whole organ causing abnormal patient reaction, or later complication, without mention of misadventure at time of operation",
+    "id": "44a82f09-dcc8-4d28-b5c5-b6deba12e9df"
+  },
+  {
+    "Code": "E858",
+    "Description": "Accidental poisoning by hormones and synthetic substitutes",
+    "id": "a5d1bbd9-7926-49d4-9e3a-0c5ccd5d89dc"
+  },
+  {
+    "Code": "E850",
+    "Description": "Accidental poisoning by heroin",
+    "id": "3775f6d7-7ebb-4a6f-bc11-3944ae51d207"
+  },
+  {
+    "Code": "E849",
+    "Description": "Home accidents",
+    "id": "10af5e98-951f-4b50-be97-a8e7e525592a"
+  },
+  {
+    "Code": "E825",
+    "Description": "Other motor vehicle nontraffic accident of other and unspecified nature injuring driver of motor vehicle other than motorcycle",
+    "id": "b28eec1d-8258-4001-96d1-08da720f2f3f"
+  },
+  {
+    "Code": "E821",
+    "Description": "Nontraffic accident involving other off-road motor vehicle injuring driver of motor vehicle other than motorcycle",
+    "id": "ffb737c7-b702-45c6-8cee-bfb951c2dd0a"
+  },
+  {
+    "Code": "E819",
+    "Description": "Motor vehicle traffic accident of unspecified nature injuring driver of motor vehicle other than motorcycle",
+    "id": "630bc98c-c506-4f09-8835-0754f24a4558"
+  },
+  {
+    "Code": "E818",
+    "Description": "Other noncollision motor vehicle traffic accident injuring driver of motor vehicle other than motorcycle",
+    "id": "10a285ed-c14a-49ea-a9b4-1e21001f5991"
+  },
+  {
+    "Code": "E816",
+    "Description": "Motor vehicle traffic accident due to loss of control, without collision on the highway, injuring driver of motor vehicle other than motorcycle",
+    "id": "3d87ae93-ab3c-4ac0-a1ae-7c0433d5b577"
+  },
+  {
+    "Code": "E812",
+    "Description": "Other motor vehicle traffic accident involving collision with motor vehicle injuring driver of motor vehicle other than motorcycle",
+    "id": "8c5bf7c2-382b-4fb5-a58f-e8e5d54c5e66"
+  },
+  {
+    "Code": "969",
+    "Description": "Poisoning by antidepressant, unspecified",
+    "id": "1254018d-25d4-42f4-9e84-33ee82767854"
+  },
+  {
+    "Code": "967",
+    "Description": "Poisoning by barbiturates",
+    "id": "ef1e99d9-d213-4859-a4d9-9fa6796ddb30"
+  },
+  {
+    "Code": "966",
+    "Description": "Poisoning by oxazolidine derivatives",
+    "id": "98f3d5f9-ef57-476d-a7f0-82b06a3a1987"
+  },
+  {
+    "Code": "965",
+    "Description": "Poisoning by opium (alkaloids), unspecified",
+    "id": "f1900ddf-135e-4447-9f85-bce6b01975bf"
+  },
+  {
+    "Code": "964",
+    "Description": "Poisoning by iron and its compounds",
+    "id": "0a83cd06-3b00-465f-82f9-af955d62ebe6"
+  },
+  {
+    "Code": "962",
+    "Description": "Poisoning by adrenal cortical steroids",
+    "id": "cc38e3eb-4efe-427d-a2eb-eb20992a7c1c"
+  },
+  {
+    "Code": "959",
+    "Description": "Late symptomatic syphilis, unspecified",
+    "id": "4a01fdfc-13f6-44e0-90d6-38131eabd4ad"
+  },
+  {
+    "Code": "958",
+    "Description": "Other specified forms of late symptomatic syphilis",
+    "id": "47ca0217-27a6-4401-8117-cef4e46d3039"
+  },
+  {
+    "Code": "952",
+    "Description": "Syphilitic peritonitis",
+    "id": "30e59451-0dcd-4804-8c6a-c38d3864bf5e"
+  },
+  {
+    "Code": "948",
+    "Description": "Burn [any degree] involving less than 10 percent of body surface with third degree burn, less than 10 percent or unspecified",
+    "id": "b9a7d266-8095-41a4-b630-09aac850f2a4"
+  },
+  {
+    "Code": "945",
+    "Description": "Burn of unspecified degree of lower limb [leg], unspecified site",
+    "id": "9aa13c09-cfa3-4f59-9345-c5cb1abadcab"
+  },
+  {
+    "Code": "943",
+    "Description": "Asymptomatic neurosyphilis",
+    "id": "7d5f109e-25bd-4626-b0f4-85513b11cb0d"
+  },
+  {
+    "Code": "942",
+    "Description": "Syphilitic meningitis",
+    "id": "e9ed24bc-d328-4e43-b682-992c064c2e94"
+  },
+  {
+    "Code": "941",
+    "Description": "General paresis",
+    "id": "05a93479-6a16-431d-9b3a-69124ac1cd79"
+  },
+  {
+    "Code": "94",
+    "Description": "Chemical burn of eyelids and periocular area",
+    "id": "ea79165a-b33d-436a-bb41-dd01ccb1d6d5"
+  },
+  {
+    "Code": "936",
+    "Description": "Foreign body in intestine and colon",
+    "id": "5f52ed81-53de-4430-8a8f-9a980b1d40bb"
+  },
+  {
+    "Code": "905",
+    "Description": "Other late congenital syphilis, symptomatic",
+    "id": "241d97f4-acda-46a9-8f00-a7bde2f52775"
+  },
+  {
+    "Code": "903",
+    "Description": "Syphilitic interstitial keratitis",
+    "id": "01c5ab69-1a8e-40b5-aaa6-ab2fde5ef0cc"
+  },
+  {
+    "Code": "9",
+    "Description": "Injury to carotid artery, unspecified",
+    "id": "fab70fb4-ce3d-4992-b915-d7b947210ded"
+  },
+  {
+    "Code": "897",
+    "Description": "Traumatic amputation of leg(s) (complete) (partial), unilateral, below knee, without mention of complication",
+    "id": "f0c2f493-b942-445c-92bc-b073b89589af"
+  },
+  {
+    "Code": "894",
+    "Description": "Multiple and unspecified open wound of lower limb, without mention of complication",
+    "id": "40f7fe10-a6ff-4d29-b9e5-20ecd799bf1c"
+  },
+  {
+    "Code": "893",
+    "Description": "Open wound of toe(s), without mention of complication",
+    "id": "a36309f7-303f-40fc-9492-d13794d5abf7"
+  },
+  {
+    "Code": "892",
+    "Description": "Open wound of foot except toe(s) alone, without mention of complication",
+    "id": "77f9399c-6185-43b0-8d0f-f8d60519fd1d"
+  },
+  {
+    "Code": "891",
+    "Description": "Open wound of knee, leg [except thigh], and ankle, without mention of complication",
+    "id": "ea71548a-f285-46ef-a416-562accacc928"
+  },
+  {
+    "Code": "890",
+    "Description": "Open wound of hip and thigh, without mention of complication",
+    "id": "0b270068-755c-449a-a3e3-4486576c596b"
+  },
+  {
+    "Code": "883",
+    "Description": "Open wound of finger(s), without mention of complication",
+    "id": "5b326ea2-3a34-439c-8dd7-5c8b9846e299"
+  },
+  {
+    "Code": "882",
+    "Description": "Open wound of hand except finger(s) alone, without mention of complication",
+    "id": "ffc183c3-7b2b-4384-9115-53022442d552"
+  },
+  {
+    "Code": "881",
+    "Description": "Open wound of forearm, without mention of complication",
+    "id": "111046f7-94d1-4973-8b00-19a1f399fa1c"
+  },
+  {
+    "Code": "880",
+    "Description": "Bartonellosis",
+    "id": "1f6ff3d2-da79-4588-b92e-d42398227ca8"
+  },
+  {
+    "Code": "88",
+    "Description": "Intestinal infection due to other organism, not elsewhere classified",
+    "id": "93e8f986-9d78-4489-9411-a4089f5602a8"
+  },
+  {
+    "Code": "877",
+    "Description": "Open wound of buttock, without mention of complication",
+    "id": "0e698fc8-bd86-41be-ac0c-d377c1c87c5d"
+  },
+  {
+    "Code": "876",
+    "Description": "Open wound of back, without mention of complication",
+    "id": "0205640f-9775-4615-9eb2-646ebb85b43b"
+  },
+  {
+    "Code": "850",
+    "Description": "Visceral [kala-azar] leishmaniasis",
+    "id": "52da0a1a-868d-4d5a-b077-0bbe98f31043"
+  },
+  {
+    "Code": "847",
+    "Description": "Intestinal infection due to other gram-negative bacteria",
+    "id": "92c075e4-8ac4-4acb-bfda-3feeb44d717e"
+  },
+  {
+    "Code": "846",
+    "Description": "Intestinal infection due to other anaerobes",
+    "id": "d11f0a83-da8d-473e-a700-8e98a5858d29"
+  },
+  {
+    "Code": "845",
+    "Description": "Intestinal infection due to Clostridium difficile",
+    "id": "041b59eb-3193-4a2c-a930-3c266e1cd6fb"
+  },
+  {
+    "Code": "844",
+    "Description": "Intestinal infection due to yersinia enterocolitica",
+    "id": "db0410b3-c1da-408e-ac69-3092df90e1b3"
+  },
+  {
+    "Code": "843",
+    "Description": "Intestinal infection due to campylobacter",
+    "id": "11496e73-fdd5-4a56-b4b3-794ef2c0917a"
+  },
+  {
+    "Code": "842",
+    "Description": "Intestinal infection due to pseudomonas",
+    "id": "e9bb6910-d12d-49c9-9e55-48cfc4d28fab"
+  },
+  {
+    "Code": "841",
+    "Description": "Intestinal infection due to staphylococcus",
+    "id": "fa523ad0-6f2e-4c22-85be-c76a0a52d0c4"
+  },
+  {
+    "Code": "840",
+    "Description": "Falciparum malaria [malignant tertian]",
+    "id": "394c87a4-060f-4d81-9f53-5b8f8f9456f6"
+  },
+  {
+    "Code": "838",
+    "Description": "Other specified rickettsioses",
+    "id": "6b4e885f-dfbc-48bf-a83a-0670eb2d069a"
+  },
+  {
+    "Code": "837",
+    "Description": "Closed dislocation of ankle",
+    "id": "d38d1907-ffd7-465e-a380-bc3d04bc2c24"
+  },
+  {
+    "Code": "836",
+    "Description": "Tear of medial cartilage or meniscus of knee, current",
+    "id": "ed834176-07aa-4204-bf1c-f62e1f6d4006"
+  },
+  {
+    "Code": "835",
+    "Description": "Closed dislocation of hip, unspecified site",
+    "id": "1fd94713-7351-4a72-b053-237a0b918fe5"
+  },
+  {
+    "Code": "834",
+    "Description": "Closed dislocation of finger, unspecified part",
+    "id": "ca538467-80d5-462d-8127-d373fcc3d25c"
+  },
+  {
+    "Code": "833",
+    "Description": "Closed dislocation of wrist, unspecified part",
+    "id": "a1c8422d-cc66-4b3f-815f-8bad196c32f7"
+  },
+  {
+    "Code": "832",
+    "Description": "Rickettsialpox",
+    "id": "224f461a-e7d8-4f7d-84eb-58e0af90eb64"
+  },
+  {
+    "Code": "807",
+    "Description": "Closed fracture of rib(s), unspecified",
+    "id": "b50ffd00-1af9-48e1-99a6-7e1d87d948fa"
+  },
+  {
+    "Code": "806",
+    "Description": "Closed fracture of C1-C4 level with unspecified spinal cord injury",
+    "id": "296946e9-7f14-45fc-a1aa-03538323032f"
+  },
+  {
+    "Code": "805",
+    "Description": "Closed fracture of cervical vertebra, unspecified level",
+    "id": "047cdc84-fefe-468c-a01f-cb6200234a6f"
+  },
+  {
+    "Code": "804",
+    "Description": "Intestinal infection due to enterohemorrhagic E. coli",
+    "id": "24ddb279-137c-4b28-ad7d-1ef6ae6ad5c8"
+  },
+  {
+    "Code": "803",
+    "Description": "Intestinal infection due to enteroinvasive E. coli",
+    "id": "f2033e65-869b-4f56-9ce9-a106aab0ba26"
+  },
+  {
+    "Code": "802",
+    "Description": "Intestinal infection due to enterotoxigenic E. coli",
+    "id": "62c521a0-0c18-4644-a2cb-ef7232b2a592"
+  },
+  {
+    "Code": "801",
+    "Description": "Intestinal infection due to enteropathogenic E. coli",
+    "id": "55d96c74-7f51-436f-b064-e7af809887b1"
+  },
+  {
+    "Code": "800",
+    "Description": "Intestinal infection due to E. coli, unspecified",
+    "id": "de58b5f8-f906-43f1-87cc-80debb342dc7"
+  },
+  {
+    "Code": "8",
+    "Description": "Closed fracture of vault of skull without mention of intracranial injury, unspecified state of consciousness",
+    "id": "710d7a62-27f9-4e82-b19f-3313e9246fa5"
+  },
+  {
+    "Code": "799",
+    "Description": "Respiratory arrest",
+    "id": "066847c0-d2e3-44cf-ba34-01081af0ec58"
+  },
+  {
+    "Code": "796",
+    "Description": "Respiratory syncytial virus (RSV)",
+    "id": "dea222d1-a21e-4baa-94c0-7c042eaa1385"
+  },
+  {
+    "Code": "795",
+    "Description": "Abnormal glandular Papanicolaou smear of cervix",
+    "id": "2ddcdb1e-f0ce-4db8-bf9f-80b4b1002823"
+  },
+  {
+    "Code": "794",
+    "Description": "Human papillomavirus in conditions classified elsewhere and of unspecified site",
+    "id": "b876e1b1-202d-4be9-8f4c-94bb921f4e0d"
+  },
+  {
+    "Code": "793",
+    "Description": "Rhinovirus infection in conditions classified elsewhere and of unspecified site",
+    "id": "88715cc5-a508-4041-8ac1-11d1ce458430"
+  },
+  {
+    "Code": "792",
+    "Description": "Coxsackie virus infection in conditions classified elsewhere and of unspecified site",
+    "id": "1a31be98-332a-4f10-b0c2-97c20de26f53"
+  },
+  {
+    "Code": "791",
+    "Description": "Echo virus infection in conditions classified elsewhere and of unspecified site",
+    "id": "4ba2ec44-8c55-4abe-80d5-4c3a1b534b0e"
+  },
+  {
+    "Code": "755",
+    "Description": "Polydactyly, unspecified digits",
+    "id": "78f450f7-227d-408b-8cfc-71c14ea67854"
+  },
+  {
+    "Code": "753",
+    "Description": "Renal agenesis and dysgenesis",
+    "id": "7a968956-d010-42cd-8341-a75d3cd5cc6d"
+  },
+  {
+    "Code": "752",
+    "Description": "Anomalies of ovaries",
+    "id": "4db12552-c52b-4324-94a0-47c6dfbadb08"
+  },
+  {
+    "Code": "751",
+    "Description": "Meckel's diverticulum",
+    "id": "0e1f7c9b-d002-4d3c-a609-2054d39ef873"
+  },
+  {
+    "Code": "750",
+    "Description": "Tongue tie",
+    "id": "74fe9486-32e5-4792-9f31-cc15de603eea"
+  },
+  {
+    "Code": "747",
+    "Description": "Patent ductus arteriosus",
+    "id": "b2f17bcb-2d57-4427-8c51-326285fcafb5"
+  },
+  {
+    "Code": "746",
+    "Description": "Congenital pulmonary valve anomaly, unspecified",
+    "id": "b5a3923a-edc1-490e-ab71-7d749610725b"
+  },
+  {
+    "Code": "745",
+    "Description": "Common truncus",
+    "id": "3d521924-7082-441a-af33-868429e0a814"
+  },
+  {
+    "Code": "742",
+    "Description": "Encephalocele",
+    "id": "49a6bc3c-b0da-468f-a973-da75aee4ee65"
+  },
+  {
+    "Code": "741",
+    "Description": "Epidemic pleurodynia",
+    "id": "8e61eee1-e840-4d3b-8b60-c3270aa6e47e"
+  },
+  {
+    "Code": "738",
+    "Description": "Ornithosis with unspecified complication",
+    "id": "7aca5769-f373-41cc-8026-89ac1778c090"
+  },
+  {
+    "Code": "737",
+    "Description": "Ornithosis with other specified complications",
+    "id": "15410d50-ad4b-4389-a088-507c78693850"
+  },
+  {
+    "Code": "736",
+    "Description": "Unspecified deformity of forearm, excluding fingers",
+    "id": "16662964-cdac-415a-bd9b-3e6374a6b280"
+  },
+  {
+    "Code": "733",
+    "Description": "Osteoporosis, unspecified",
+    "id": "e7a7fb93-5809-4dbe-a758-97b64ec91fc4"
+  },
+  {
+    "Code": "731",
+    "Description": "Osteitis deformans without mention of bone tumor",
+    "id": "325b6933-bf05-4577-a8eb-5b44cd0b4bca"
+  },
+  {
+    "Code": "730",
+    "Description": "Ornithosis with pneumonia",
+    "id": "de285300-68bc-47d6-9261-a5df00e5bcd7"
+  },
+  {
+    "Code": "713",
+    "Description": "Arthropathy associated with other endocrine and metabolic disorders",
+    "id": "13876cb0-a98d-40ea-95c9-b69420166cb8"
+  },
+  {
+    "Code": "712",
+    "Description": "Erythema nodosum with hypersensitivity reaction in tuberculosis, bacteriological or histological examination unknown (at present)",
+    "id": "8d7c121b-e1f0-4638-b2f5-1e97baa15429"
+  },
+  {
+    "Code": "711",
+    "Description": "Pyogenic arthritis, site unspecified",
+    "id": "1889eb59-39b9-409f-8f42-f4a86efe8c33"
+  },
+  {
+    "Code": "710",
+    "Description": "Systemic lupus erythematosus",
+    "id": "7c96e666-64eb-49fc-baf2-e333e5f5e34a"
+  },
+  {
+    "Code": "709",
+    "Description": "Unspecified viral hepatitis without mention of hepatic coma",
+    "id": "1c80ca8d-d328-451e-876b-8d025c9c2ada"
+  },
+  {
+    "Code": "708",
+    "Description": "Allergic urticaria",
+    "id": "4d8ed226-aeea-46be-b768-df1521621678"
+  },
+  {
+    "Code": "707",
+    "Description": "Pressure ulcer, unspecified site",
+    "id": "f3384a39-cb66-4f2c-99f2-daed2affa43c"
+  },
+  {
+    "Code": "706",
+    "Description": "Unspecified viral hepatitis with hepatic coma",
+    "id": "decc90a8-9055-4031-81c3-10df0af04837"
+  },
+  {
+    "Code": "705",
+    "Description": "Anhidrosis",
+    "id": "12c516db-b1c9-4498-8f63-135bebe0eb4c"
+  },
+  {
+    "Code": "704",
+    "Description": "Alopecia, unspecified",
+    "id": "bf1356e5-ad34-4141-99a0-d1a3b3767bc8"
+  },
+  {
+    "Code": "703",
+    "Description": "Ingrowing nail",
+    "id": "2e79a44e-0ecf-4e01-9326-85d68b6af39f"
+  },
+  {
+    "Code": "702",
+    "Description": "Actinic keratosis",
+    "id": "fecad8cc-a746-4d9b-a8f6-1ff2851c4d62"
+  },
+  {
+    "Code": "70",
+    "Description": "Balantidiasis",
+    "id": "6303007c-44b6-4909-8ba1-222cbca9876d"
+  },
+  {
+    "Code": "698",
+    "Description": "Pruritus ani",
+    "id": "4c6b7c58-e538-406f-adc4-d86d1f3e16a2"
+  },
+  {
+    "Code": "696",
+    "Description": "Psoriatic arthropathy",
+    "id": "5383d390-670f-46a4-9981-db8145df5048"
+  },
+  {
+    "Code": "695",
+    "Description": "Toxic erythema",
+    "id": "af0cd575-43e7-434f-ae46-c5f6505f0438"
+  },
+  {
+    "Code": "694",
+    "Description": "Dermatitis herpetiformis",
+    "id": "c47c67d3-95df-441c-ba5d-568d439abd8c"
+  },
+  {
+    "Code": "693",
+    "Description": "Dermatitis due to drugs and medicines taken internally",
+    "id": "8df110e1-68d2-4663-9bff-14e0e2928c3f"
+  },
+  {
+    "Code": "692",
+    "Description": "Contact dermatitis and other eczema due to detergents",
+    "id": "0d193f64-1c1e-4373-91f6-52a28ea28c3a"
+  },
+  {
+    "Code": "690",
+    "Description": "Genitourinary tuberculosis, unspecified, unspecified",
+    "id": "09e979a4-aae7-413f-a461-b4e52850de64"
+  },
+  {
+    "Code": "686",
+    "Description": "Pyoderma, unspecified",
+    "id": "27a09d83-2feb-49d5-b8fa-1f9e476f0242"
+  },
+  {
+    "Code": "682",
+    "Description": "Cellulitis and abscess of face",
+    "id": "e69a9f06-4bcc-493a-b527-3697fa52776b"
+  },
+  {
+    "Code": "681",
+    "Description": "Cellulitis and abscess of finger, unspecified",
+    "id": "43f66dfe-81df-4686-a55f-d748fc8d5cc4"
+  },
+  {
+    "Code": "680",
+    "Description": "Carbuncle and furuncle of face",
+    "id": "27f93ecf-abec-4b0d-8401-d1b667b01632"
+  },
+  {
+    "Code": "671",
+    "Description": "Varicose veins of legs complicating pregnancy and the puerperium, unspecified as to episode of care or not applicable",
+    "id": "fe052bda-396d-4e3f-8fe3-39c4a4a81d97"
+  },
+  {
+    "Code": "670",
+    "Description": "Major puerperal infection, unspecified as to episode of care or not applicable",
+    "id": "f22a6533-71b1-4d33-a4ca-caf8eb1422bc"
+  },
+  {
+    "Code": "669",
+    "Description": "Arthropod-borne viral disease, unspecified",
+    "id": "2d1405a1-e7ad-4279-aeb5-d94d0a74011d"
+  },
+  {
+    "Code": "665",
+    "Description": "Rupture of uterus before onset of labor, unspecified as to episode of care or not applicable",
+    "id": "e896d82d-1bd7-4dfc-b94b-405908d7681a"
+  },
+  {
+    "Code": "664",
+    "Description": "First-degree perineal laceration, unspecified as to episode of care or not applicable",
+    "id": "cdf4ef3b-e186-4f73-accc-d611adb811eb"
+  },
+  {
+    "Code": "663",
+    "Description": "Other mosquito-borne fever",
+    "id": "0772fbdb-fc22-4984-a50b-8a8086488be2"
+  },
+  {
+    "Code": "661",
+    "Description": "Tick-borne fever",
+    "id": "f7ca1f38-4760-4d3b-b641-0d8168bad5be"
+  },
+  {
+    "Code": "660",
+    "Description": "Phlebotomus fever",
+    "id": "cd6fab4b-ab5c-4c81-ab28-0963e73f0119"
+  },
+  {
+    "Code": "66",
+    "Description": "Amebic skin ulceration",
+    "id": "bb16e5aa-e6bc-4ba9-8c27-71c2b1e03b6c"
+  },
+  {
+    "Code": "659",
+    "Description": "Arthropod-borne hemorrhagic fever, unspecified",
+    "id": "3d5fc4a1-0751-41d1-b46c-023775987ce0"
+  },
+  {
+    "Code": "658",
+    "Description": "Other specified arthropod-borne hemorrhagic fever",
+    "id": "6f11d4c9-37d4-4c7b-9439-fa059cb19327"
+  },
+  {
+    "Code": "657",
+    "Description": "Polyhydramnios, unspecified as to episode of care or not applicable",
+    "id": "7371d0d5-2071-4a13-b350-b3cf49a8a83a"
+  },
+  {
+    "Code": "656",
+    "Description": "Fetal-maternal hemorrhage, unspecified as to episode of care or not applicable",
+    "id": "d3136a4e-3d50-433f-a9b5-22553976955f"
+  },
+  {
+    "Code": "655",
+    "Description": "Central nervous system malformation in fetus, unspecified as to episode of care or not applicable",
+    "id": "e6e6250c-16e0-42ac-8052-ab1cc8f1d467"
+  },
+  {
+    "Code": "654",
+    "Description": "Mosquito-borne hemorrhagic fever",
+    "id": "43e9d41c-8119-4041-8d2e-ca41a81500d8"
+  },
+  {
+    "Code": "653",
+    "Description": "Other tick-borne hemorrhagic fever",
+    "id": "11c9cad5-9583-43f7-bae9-d7415c2981d6"
+  },
+  {
+    "Code": "652",
+    "Description": "Kyasanur forest disease",
+    "id": "909286fd-27ce-4ff4-9918-f0c1bd9cc29e"
+  },
+  {
+    "Code": "649",
+    "Description": "Tobacco use disorder complicating pregnancy, childbirth, or the puerperium, unspecified as to episode of care or not applicable",
+    "id": "a096a890-21a7-49d5-99a9-600b64d4888d"
+  },
+  {
+    "Code": "648",
+    "Description": "Diabetes mellitus of mother, complicating pregnancy, childbirth, or the puerperium, unspecified as to episode of care or not applicable",
+    "id": "f9e90c7e-75ad-4caf-83b3-0f5e16917ee4"
+  },
+  {
+    "Code": "647",
+    "Description": "Syphilis of mother, complicating pregnancy, childbirth, or the puerperium, unspecified as to episode of care or not applicable",
+    "id": "e8dbc01f-40aa-426b-ab88-7b2beb04144a"
+  },
+  {
+    "Code": "646",
+    "Description": "Papyraceous fetus, unspecified as to episode of care or not applicable",
+    "id": "ceb01c7d-cdca-428e-aebc-785e3bbdff27"
+  },
+  {
+    "Code": "645",
+    "Description": "Tuberculosis of epididymis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically",
+    "id": "12566b41-d7bb-43f9-aa68-8ff08923e95d"
+  },
+  {
+    "Code": "644",
+    "Description": "Threatened premature labor, unspecified as to episode of care or not applicable",
+    "id": "f2db0b2f-25e4-4e93-9f59-1ad0164312eb"
+  },
+  {
+    "Code": "643",
+    "Description": "Mild hyperemesis gravidarum, unspecified as to episode of care or not applicable",
+    "id": "1c60b5bc-2eac-41d8-9aa5-68564a017028"
+  },
+  {
+    "Code": "642",
+    "Description": "Benign essential hypertension complicating pregnancy, childbirth, and the puerperium, unspecified as to episode of care or not applicable",
+    "id": "bf820301-9bd2-46e9-8be9-dba86afe0b78"
+  },
+  {
+    "Code": "641",
+    "Description": "Placenta previa without hemorrhage, unspecified as to episode of care or not applicable",
+    "id": "08a3a567-8d07-47f0-98ae-9178fadd96d7"
+  },
+  {
+    "Code": "634",
+    "Description": "Spontaneous abortion, complicated by genital tract and pelvic infection, unspecified",
+    "id": "e4ccfcbd-0d7b-4a3d-92cb-cd41e8a80bfb"
+  },
+  {
+    "Code": "633",
+    "Description": "Abdominal pregnancy without intrauterine pregnancy",
+    "id": "38276280-d48e-49a5-889c-64e408032b41"
+  },
+  {
+    "Code": "632",
+    "Description": "Missed abortion",
+    "id": "f6a0c0e5-c26e-478a-9fb3-b9c47f5588b1"
+  },
+  {
+    "Code": "627",
+    "Description": "Premenopausal menorrhagia",
+    "id": "fb92816a-7490-4c92-ae08-fb51ddb0c02a"
+  },
+  {
+    "Code": "626",
+    "Description": "Absence of menstruation",
+    "id": "d2bfca86-88fd-4ed0-8c7b-70df2edea3fd"
+  },
+  {
+    "Code": "625",
+    "Description": "California virus encephalitis",
+    "id": "4c8a1053-ca27-4b85-b8b1-d327e8c32a42"
+  },
+  {
+    "Code": "624",
+    "Description": "Australian encephalitis",
+    "id": "0cfd65fb-00f3-45d3-978e-f740907c560c"
+  },
+  {
+    "Code": "623",
+    "Description": "St. Louis encephalitis",
+    "id": "27e1e774-d7e2-474f-9ae1-7c0a2e1d3215"
+  },
+  {
+    "Code": "622",
+    "Description": "Eastern equine encephalitis",
+    "id": "9c578dda-22bf-4c51-b8a9-9f7537ecbc14"
+  },
+  {
+    "Code": "621",
+    "Description": "Western equine encephalitis",
+    "id": "9aa39380-8bc6-40d4-b4fc-6280cfb2e211"
+  },
+  {
+    "Code": "620",
+    "Description": "Japanese encephalitis",
+    "id": "1157f79a-4380-44d6-8f48-4174dc02518e"
+  },
+  {
+    "Code": "619",
+    "Description": "Urinary-genital tract fistula, female",
+    "id": "cfd2e353-a955-4972-8032-1697c05e9de8"
+  },
+  {
+    "Code": "618",
+    "Description": "Unspecified prolapse of vaginal walls",
+    "id": "b2f37c1e-7c00-44d2-a82e-abd85557ac9e"
+  },
+  {
+    "Code": "617",
+    "Description": "Endometriosis of uterus",
+    "id": "ed73bf7a-09d0-4315-8aeb-51a3632388c7"
+  },
+  {
+    "Code": "616",
+    "Description": "Cervicitis and endocervicitis",
+    "id": "7b3b3ee1-ad89-4526-a924-0220c17bd1dc"
+  },
+  {
+    "Code": "614",
+    "Description": "Acute salpingitis and oophoritis",
+    "id": "ee706a29-fd2e-4b37-b421-039fd4823633"
+  },
+  {
+    "Code": "611",
+    "Description": "Inflammatory disease of breast",
+    "id": "f977d9b4-a4b3-4777-b7ec-62bae2744c4d"
+  },
+  {
+    "Code": "610",
+    "Description": "Solitary cyst of breast",
+    "id": "cf9efcda-d530-4d2e-a67a-e068a176ed74"
+  },
+  {
+    "Code": "608",
+    "Description": "Seminal vesiculitis",
+    "id": "3282893a-8f15-41a3-8c8a-c64196bcc27f"
+  },
+  {
+    "Code": "607",
+    "Description": "Leukoplakia of penis",
+    "id": "3f9c73e6-34cf-4f5d-8257-5cde73909bb9"
+  },
+  {
+    "Code": "604",
+    "Description": "Orchitis, epididymitis, and epididymo-orchitis, with abscess",
+    "id": "f3086950-7c78-445b-8386-35c983abd9bc"
+  },
+  {
+    "Code": "603",
+    "Description": "Encysted hydrocele",
+    "id": "dcf197d3-b701-43da-bd79-a733b2667ef4"
+  },
+  {
+    "Code": "602",
+    "Description": "Calculus of prostate",
+    "id": "4e82a24f-9054-4198-b6f5-339db504c793"
+  },
+  {
+    "Code": "601",
+    "Description": "Urban yellow fever",
+    "id": "718275e1-882f-4f91-b158-6162504eb5e2"
+  },
+  {
+    "Code": "600",
+    "Description": "Sylvatic yellow fever",
+    "id": "a7d543e6-afab-4174-a2d8-55ce900ca7f4"
+  },
+  {
+    "Code": "599",
+    "Description": "Poxvirus infections, unspecified",
+    "id": "1bedd0fe-ac90-4ebb-b1ef-c18800b59d19"
+  },
+  {
+    "Code": "598",
+    "Description": "Other poxvirus infections",
+    "id": "45e9cc79-af35-4c2e-b6e2-734370219acf"
+  },
+  {
+    "Code": "596",
+    "Description": "Bladder neck obstruction",
+    "id": "4eeaf9a5-938a-4b1d-be16-4c31daf935ac"
+  },
+  {
+    "Code": "595",
+    "Description": "Acute cystitis",
+    "id": "91d40393-3dbb-4a5d-ab3b-48dcf1adfb74"
+  },
+  {
+    "Code": "594",
+    "Description": "Calculus in diverticulum of bladder",
+    "id": "98fc85f1-87ea-47e3-a63e-1ae27cadef52"
+  },
+  {
+    "Code": "593",
+    "Description": "Nephroptosis",
+    "id": "eb1d969e-0fd9-47e6-b80d-094154b2b87b"
+  },
+  {
+    "Code": "592",
+    "Description": "Calculus of kidney",
+    "id": "1ab501a1-2028-41d6-b945-2f940b75de0b"
+  },
+  {
+    "Code": "591",
+    "Description": "Hydronephrosis",
+    "id": "9d3d3f75-f520-412d-87cc-273e0ab7d0b7"
+  },
+  {
+    "Code": "590",
+    "Description": "Chronic pyelonephritis without lesion of renal medullary necrosis",
+    "id": "e78df125-8e6b-4949-b2fa-cdc0b292dd93"
+  },
+  {
+    "Code": "588",
+    "Description": "Renal osteodystrophy",
+    "id": "780e3f5e-95e9-4b4e-b017-c005cfb705b3"
+  },
+  {
+    "Code": "586",
+    "Description": "Renal failure, unspecified",
+    "id": "6f74fcec-06de-42ad-b908-79b611d6106e"
+  },
+  {
+    "Code": "585",
+    "Description": "Chronic kidney disease, Stage I",
+    "id": "869150d3-6232-463b-a135-81b81f304e78"
+  },
+  {
+    "Code": "584",
+    "Description": "Acute kidney failure with lesion of tubular necrosis",
+    "id": "3b87b438-6533-4b0e-a4c8-7aa625183a39"
+  },
+  {
+    "Code": "583",
+    "Description": "Nephritis and nephropathy, not specified as acute or chronic, with lesion of proliferative glomerulonephritis",
+    "id": "a423f32e-ad44-4b33-9c74-da4a7d11248e"
+  },
+  {
+    "Code": "582",
+    "Description": "Chronic glomerulonephritis with lesion of proliferative glomerulonephritis",
+    "id": "e41fd215-b7eb-416a-9a33-fe27eed7359b"
+  },
+  {
+    "Code": "581",
+    "Description": "Food poisoning due to Vibrio vulnificus",
+    "id": "8d781f27-ccde-4592-996f-23303fc630ba"
+  },
+  {
+    "Code": "580",
+    "Description": "Acute glomerulonephritis with lesion of proliferative glomerulonephritis",
+    "id": "25d22f2d-fa3b-4231-8d79-2aa24802b623"
+  },
+  {
+    "Code": "579",
+    "Description": "Viral exanthem, unspecified",
+    "id": "9ffc66d2-471b-47e8-b0ec-501f32c31257"
+  },
+  {
+    "Code": "578",
+    "Description": "Other specified viral exanthemata",
+    "id": "d4bea3f4-6039-4131-979a-19915067c858"
+  },
+  {
+    "Code": "57",
+    "Description": "Acute and subacute necrosis of liver",
+    "id": "f58246c5-3bcd-45b7-83ba-44b703d50504"
+  },
+  {
+    "Code": "10",
+    "Description": "Cholera due to vibrio cholerae",
+    "id": "0d4fc4b0-6177-49cd-ad19-753765f4e153"
+  },
+  {
+    "Code": "570",
+    "Description": "Acute and subacute necrosis of liver",
+    "id": "0ce6bc66-fd1c-4b41-b37f-80713a252fc4"
+  },
+  {
+    "Code": "11",
+    "Description": "Cholera due to vibrio cholerae el tor",
+    "id": "9ccd3e55-bbd7-4c0f-a0c3-9903dc4f28e5"
+  },
+  {
+    "Code": "110",
+    "Description": "Dermatophytosis of scalp and beard",
+    "id": "d49b8873-9865-42dc-bb00-725970b1fe4c"
+  },
+  {
+    "Code": "571",
+    "Description": "Alcoholic fatty liver",
+    "id": "7476e333-38bf-4e1d-a8f0-b80245fcd038"
+  },
+  {
+    "Code": "572",
+    "Description": "Abscess of liver",
+    "id": "9ad4b787-11bd-4d8e-a270-668e4ffbe841"
+  },
+  {
+    "Code": "112",
+    "Description": "Candidiasis of mouth",
+    "id": "f54ce4b6-c5a2-4fd7-9f23-5bfc0c042b85"
+  },
+  {
+    "Code": "573",
+    "Description": "Chronic passive congestion of liver",
+    "id": "e46d078b-d5bd-40cc-b37f-ee4f46d81570"
+  },
+  {
+    "Code": "114",
+    "Description": "Primary coccidioidomycosis (pulmonary)",
+    "id": "03cbd804-93c6-4f3b-aed5-663f970bf243"
+  },
+  {
+    "Code": "574",
+    "Description": "Calculus of gallbladder with acute cholecystitis, without mention of obstruction",
+    "id": "a01ef20d-cf4e-448d-aa48-883c4b94f718"
+  },
+  {
+    "Code": "117",
+    "Description": "Rhinosporidiosis",
+    "id": "c7508299-50c3-4b26-bc59-9b2d778f9214"
+  },
+  {
+    "Code": "575",
+    "Description": "Acute cholecystitis",
+    "id": "f9095509-5787-4626-9d46-776122c012a0"
+  },
+  {
+    "Code": "123",
+    "Description": "Taenia solium infection, intestinal form",
+    "id": "ae947ba7-822f-4d60-9714-5d64d9b9f0b2"
+  },
+  {
+    "Code": "577",
+    "Description": "Acute pancreatitis",
+    "id": "0f41126e-afc8-445b-bbd1-0da9308705fb"
+  },
+  {
+    "Code": "131",
+    "Description": "Urogenital trichomoniasis, unspecified",
+    "id": "035a9ab5-fdba-4de8-9cdc-83f45075a5bf"
+  },
+  {
+    "Code": "576",
+    "Description": "Postcholecystectomy syndrome",
+    "id": "a5d594b4-2fc9-43a7-b3b1-a94a8fc6f957"
+  }]
