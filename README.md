@@ -38,7 +38,7 @@ Start by deploying the [resources](./Resource_Deployment/ResourceDeployment.md) 
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FMachine-Learning-Patient-Risk-Analyzer-SA%2Fmain%2FResource_Deployment%2Fazuredeploy.json)
 
 2. Clone repository and navigate to the root of the directory
-3. Go to [Deployment Guide](./Resource_Deployment/ResourceDeployment.md) under [./Resource_Deployment](./Resource_Deployment) for the steps you need to take to deploy this solution
+3. Go to [Deployment Guide](./Resource_Deployment/README.md) under [./Resource_Deployment](./Resource_Deployment) for the steps you need to take to deploy this solution
 
 ## Folders
 ## [Resource Deployment](./Resource_Deployment/README.md)
