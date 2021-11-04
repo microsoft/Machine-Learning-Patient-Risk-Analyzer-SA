@@ -33,7 +33,7 @@ The directions provided for this repository assume fundemental working knowledge
 ## Getting Started
 Start by deploying the [resources](./Resource_Deployment/ResourceDeployment.md) needed for this solution,
 
-1. press Deploy Azure :  
+1. Press Deploy Azure :  
 
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fmicrosoft%2FMachine-Learning-Patient-Risk-Analyzer-SA%2Fblob%2Fmain%2FResource_Deployment%2Fazuredeploy.json)
 
