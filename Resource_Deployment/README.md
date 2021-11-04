@@ -78,7 +78,7 @@ In this step you're going to add the Cosmos DB as a linked service in the Synaps
 5. Fill in the following data for the linked service
 
   | Field | Value |
-  | ------------- | :------------- | 
+  | ------------- | :------------- :| 
   | Name | "patientHubDB" |
   | Connect via integration runtime | AutoResolveIntegrationRuntime |
   | Authentication method | Connection String |
@@ -186,12 +186,13 @@ Your URI should look similar like the screenshot below.
 ![HTTP](../Frontend_Deployment/img/HTTP.jpg "HTTP")
 
 | API Service | Flow |
-  | ------------- | :-------------: | -----: |
+  | ------------- | :------------- | 
   | appointment | PatientHub-GetNextAppointments |
   | batchinference | PatientHub-InferenceExplanation |
   | patient | PatientHub-GetAllPatients | 
   | realtimeinference | PatientHub-RealtimeInference |
-  | tts | PatientHub-GetSpeechFile |
+  | tts | PatientHub-GetSpeechFile |  
+
 
 11. After the modification, click the "Test" button in the upper right corner to test the flow. If all went well, you should receive "Your flow ran successfully".
 12. Once the flows are modified, you should open the Power App and all should work like a charm.
