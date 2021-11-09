@@ -78,7 +78,7 @@ In this step you're going to add the Cosmos DB as a linked service in the Synaps
 5. Fill in the following data for the linked service
 
   | Field | Value |
-  | ------------- | :------------- :| 
+  | ------------- | ------------- | 
   | Name | "patientHubDB" |
   | Connect via integration runtime | AutoResolveIntegrationRuntime |
   | Authentication method | Connection String |
