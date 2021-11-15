@@ -11,8 +11,8 @@ Function ShowDisclaimer(){
 
 $AgreementAnswer = ShowDisclaimer
 
-while (!$AgreementAnswer.Equals("Y")) {
-    if ($AgreementAnswer.Equals("N")) {
+while (!($AgreementAnswer).ToUpper().Equals("Y")) {
+    if (($AgreementAnswer).ToUpper().Equals("N")) {
         exit 0
     }
     $AgreementAnswer = ShowDisclaimer
