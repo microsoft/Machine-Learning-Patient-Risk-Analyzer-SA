@@ -5,7 +5,7 @@
     "parameters": {
         "UniquePrefixName": {
             "type": "string",
-            "defaultValue": "hub",
+            "defaultValue": "SG",
             "minLength": 3,
             "maxLength": 10,
             "metadata": {
@@ -185,11 +185,11 @@
                 "autoScale": {
                     "enabled": true,
                     "minNodeCount": 3,
-                    "maxNodeCount": 15
+                    "maxNodeCount": 6
                 },
                 "autoPause": {
                     "enabled": true,
-                    "delayInMinutes": 15
+                    "delayInMinutes": 8
                 },
                 "isComputeIsolationEnabled": false,
                 "sessionLevelPackagesEnabled": false,
@@ -363,7 +363,7 @@
             "properties": {
               "options": {
                 "autoscaleSettings": {
-                  "maxThroughput": 100000
+                  "maxThroughput": 4000
                 }
               },
               "resource": {
@@ -1045,7 +1045,7 @@
                         "osDiskSizeGB": 0,
                         "count": 3,
                         "enableAutoScaling": true,
-                        "minCount": 1,
+                        "minCount": 3,
                         "maxCount": 5,
                         "vmSize": "Standard_DS2_v2",
                         "osType": "Linux",
