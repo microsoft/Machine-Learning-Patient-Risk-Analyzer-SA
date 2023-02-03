@@ -17,7 +17,7 @@ spec:
   spec:
     containers:
     - name: appointment
-      image: {acrName}.azurecr.io/patienthub/appointment
+      image: craccelator001.azurecr.io/patienthub/appointment
       ports:
       - containerPort: 80
       imagePullPolicy: Always
@@ -38,7 +38,7 @@ spec:
   spec:
     containers:
     - name: patient
-      image: {acrName}.azurecr.io/patienthub/patient
+      image: craccelator001.azurecr.io/patienthub/patient
       ports:
       - containerPort: 80
       imagePullPolicy: Always
@@ -59,7 +59,7 @@ spec:
   spec:
     containers:
     - name: batchinference
-      image: {acrName}.azurecr.io/patienthub/batchinference
+      image: craccelator001.azurecr.io/patienthub/batchinference
       ports:
       - containerPort: 80
       imagePullPolicy: Always
@@ -80,7 +80,7 @@ spec:
   spec:
     containers:
     - name: realtimeinference
-      image: {acrName}.azurecr.io/patienthub/realtimeinference
+      image: craccelator001.azurecr.io/patienthub/realtimeinference
       ports:
       - containerPort: 80
       imagePullPolicy: Always
@@ -101,7 +101,7 @@ spec:
   spec:
     containers:
     - name: changefeedwatcher
-      image: {acrName}.azurecr.io/patienthub/changefeedwatcher
+      image: craccelator001.azurecr.io/patienthub/changefeedwatcher
       ports:
       - containerPort: 80
       imagePullPolicy: Always
